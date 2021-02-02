@@ -1,2 +1,0 @@
-git clone git@github.com:congcongshang/StudyNoteBook.git
-git clone git@github.com:congcongshang/congcongshang.github.io.git
