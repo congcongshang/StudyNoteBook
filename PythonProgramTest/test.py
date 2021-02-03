@@ -19,8 +19,8 @@ def compress(raw: str) -> bytes:
             type = ss
             index = 1
     ans = ans + '\\x{:02X}'.format(index) + type
-    print(ans)
-    return bytes(ans, encoding = "utf8")
+    print(ans.encode('utf-8'))
+    return bytes(ans, encoding = "gbk")
     # return bytes(map(ord, ans))
 
 if __name__ == "__main__":
