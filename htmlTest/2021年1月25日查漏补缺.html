@@ -333,6 +333,9 @@ No.7    CSS 网格
                                 起始水平/起始垂直/结束水平/结束垂直
         ********************************************
         grid-template-columns: repeat(3,1fr);   repeat重复 (3次1fr)
+        grid-template-columns: repeat(3, minmax(90px, 1fr));   minmax设定最大最小值(宽度最小90px,最大1fr)
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));   auto-fill设置根据minmax自动填充
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));    auto-fit 自动适应不会填充空白
         ********************************************
         如何简单 专注  聚焦  ->>>>>>  
 
