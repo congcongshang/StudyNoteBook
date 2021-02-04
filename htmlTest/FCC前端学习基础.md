@@ -2,7 +2,7 @@
 
 [1. Basic HTML & HTML5](#A001)
 
-​    [1. eg01    label和input标签的使用](#egA00101)
+​    [1.eg01    label和input标签的使用](#egA00101)
 
 ## <a name="A001">1. Basic HTML & HTML5</a>
 
