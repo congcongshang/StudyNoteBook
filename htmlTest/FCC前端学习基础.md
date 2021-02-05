@@ -4,6 +4,8 @@
 
 ​    [1.eg01    label和input标签的使用](#egA00101)
 
+[2. Basic CSS](#A002)
+
 ## <a name="A001">1. Basic HTML & HTML5</a>
 
 -   h1~h6  标题
@@ -55,5 +57,11 @@
 </label>
 ```
 
+## <a name="A002">2. Basic CSS</a>
 
+|   属性    |   含义   | 数值 |
+| :-------: | :------: | :--: |
+|   color   |   颜色   |      |
+| font-size | 字体大小 |      |
+|           |          |      |
 
