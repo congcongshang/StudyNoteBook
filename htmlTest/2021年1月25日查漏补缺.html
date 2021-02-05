@@ -293,7 +293,7 @@ No.6    弹性盒模型<my>
 
 No.7    CSS 网格
     <my>
-        display: grid;  创建网格元素
+        display: grid;  创建网格元素(网格子元素也可以再建立小网格)
         grid-template-columns: 100px 100px 100px;  创建三列宽度为100px的网格
         grid-template-rows: 50px 50px;  创建两行50px的网格
 
@@ -337,8 +337,16 @@ No.7    CSS 网格
         grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));   auto-fill设置根据minmax自动填充
         grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));    auto-fit 自动适应不会填充空白
         ********************************************
-        如何简单 专注  聚焦  ->>>>>>  
-
+        @media (min-width: 300px){  使用media控制当页面大于300px的时候怎么显示
+            .container{
+              grid-template-columns: auto 1fr;
+              grid-template-rows: auto 1fr auto;
+              grid-template-areas:
+                "advert header"
+                "advert content"
+                "advert footer";
+            }
+          }
         
 
 
