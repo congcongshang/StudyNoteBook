@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .canvas-style {
+            background-color: #fff;
+            float: left;
+            position: absolute;
+            z-index: 5;
+        }
+
+        .text-style {
+            float: left;
+            position: absolute;
+            font: 28px orbitron;
+            word-break: break-all;
+            background-color: transparent;
+            border:0px solid red;
+            resize: none;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body style="background-color: #999">
+    <canvas id="canvas" width="800" height="600" class="canvas-style">抱歉，您的浏览器不支持canvas元素</canvas>
+    <textarea name="textBox" id="textBox" cols="30" rows="10" class="text-style"></textarea>
+
+    <script>
+        var canvas = document.getElementById("canvas");
+        var textBox = document.getElementById("textBox");
+        var textFlag = false;
+        var textContent = "";
+
+        if (canvas.getContext) {
+            var context = canvas.getContext("2d");  //2d用引用括起来
+        }
+
+        canvas.drawing = function (x1, y1, x2, y2, e) {
+            if (!context) {
+                return;
+            } else {
+                // 设置画笔的颜色和大小
+                context.fillStyle = "red";  // 填充颜色为红色
+                context.strokeStyle = "blue";  // 画笔的颜色
+                context.lineWidth = 5;  // 指定描边线的宽度
+
+                context.save();
+                context.beginPath();
+
+                // 写字
+                context.font = "28px orbitron";
+                context.fillText(textContent, parseInt(textBox.style.left), parseInt(textBox.style.top));
+
+                context.restore();
+                context.closePath();
+            }
+        };
+
+        canvas.onmousedown = function mouseDownAction(e) {
+            this.X1 = e.offsetX;  // 鼠标按下时保存当前位置，为起始位置
+            this.Y1 = e.offsetY;
+            if (textFlag) {
+                textContent = textBox.value;
+                textFlag = false;
+                textBox.style['z-index'] = 1;
+                textBox.value = "";
+                this.drawing(this.X1, this.Y1);
+            } else if (!textFlag) {
+                textFlag = true
+                textBox.style.left = this.X1 + 'px';
+                textBox.style.top = this.Y1 + 'px';
+                textBox.style['z-index'] = 6;
+                textBox.focus();
+            }
+        };
+    </script>
+</body>
+</html>
