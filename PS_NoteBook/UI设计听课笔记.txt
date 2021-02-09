@@ -1,0 +1,11 @@
+### 第一节课 UI初识
+
+UI/UE/IXD的区别
+
+UI (user Interface) 用户界面
+UE/UX (User Experience) 用户体验
+IXD (Interaction design) 交互设计
+
+先看到外貌UI,再进行交流IXD,感受怎么样UE/UX
+相亲先看脸UI---在聊天IXD---这人不行UE/UX
+
