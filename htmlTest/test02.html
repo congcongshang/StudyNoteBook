@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">小猫咪注册表</h1>
+    <p id="description">欢迎来到花脸猫社区,你愿意成为其中的一只小猫咪么? 快来填表格成为花脸猫的一员吧! 期待你的加入!</p>
+    <form action="" id="survey-form">
+        <label id="name-label" for="name">姓名:</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="输入你的名字" required />
+        <label id="email-label" for="email">邮箱:</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="输入你的邮箱" required />
+        <label id="number-label" for="number">电话:</label>
+        <input type="number" name="phone" id="number" min="13000000000" max="19999999999" placeholder="输入你的电话" />
+
+        <p>你的职业是什么?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>选择你的身份</option>
+            <option value="student">学生</option>
+            <option value="job">工程师</option>
+            <option value="learner">学者</option>
+            <option value="preferNo">无业</option>
+            <option value="other">其他</option>
+        </select>
+
+        <p>你的性别是什么?</p>
+        <label>
+            <input name="sex" value="男" type="radio" class="input-radio" checked />男
+        </label>
+        <label>
+            <input name="sex" value="女" type="radio" class="input-radio" />女
+        </label>
+        <label>
+            <input name="sex" value="其他" type="radio" class="input-radio" />其他
+        </label>
+
+
+        <p>
+            你爱好的运动有哪些?
+        </p>
+        <label><input name="prefer" value="慢跑" type="checkbox"
+                class="input-checkbox" />慢跑</label>
+        <label>
+            <input name="prefer" value="篮球" type="checkbox" class="input-checkbox" />篮球
+        </label>
+        <label>
+            <input name="prefer" value="足球" type="checkbox" class="input-checkbox" />足球
+        </label>
+        <label>
+            <input name="prefer" value="羽毛球" type="checkbox"
+                class="input-checkbox" />羽毛球
+            </label>
+        <label>
+            <input name="prefer" value="瑜伽" type="checkbox" class="input-checkbox" />瑜伽
+        </label>
+        <label>
+            <input name="prefer" value="轮滑" type="checkbox" class="input-checkbox" />轮滑
+        </label>
+        
+        <p>自我介绍</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="告诉我们你是一只什么喵?"></textarea>
+
+        <button type="submit" id="submit" class="submit-button">
+           提交
+        </button>
+    </form>
+</body>
+
+</html>
