@@ -6,13 +6,16 @@
 int main(){
     // int a[] = {1,2,3,4,5};
     // outNums(a,5);
-    
+
     // eg01_1();
     // eg01_2();
 
 
-    eg02_1();
-    
+    // eg02_1();
+
+    // LC练习 整数反转
+    // testFunction001();
+
 
     printf("\n");
     system("pause");
