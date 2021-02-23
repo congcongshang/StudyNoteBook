@@ -11,88 +11,149 @@
 </head>
 <body>
     <canvas id="mycv" width="800" height="600"></canvas>
-    <!-- <script>
-        var c = document.getElementById('mycv');  // 找到canvas元素
-        var ctx=c.getContext("2d");               // 创建contex对象t
-        var fontSize = 20 ;
-        ctx.font = `${fontSize}px Georgia`;
-        var [txt, xText, yText] = ["Hello World", 100, 100];
-        var { width: wText } = ctx.measureText(txt);
-        var hText = fontSize;
-        ctx.fillStyle = '#000';
-        ctx.fillRect(1, 1, xText, yText);
-        ctx.fillRect(xText + wText, yText - hText, 100, 20);
-        ctx.translate(xText + wText / 2, yText - hText / 2);
 
-    //角度为累计增长数
-    f(0);
-    f(30);
-    f(30) ;      //60deg
-    f(30) ;      //90deg
-    function f(i) {
-        deg = Math.PI / 180 * i;
-        ctx.rotate(deg);
-        /**
-            1. 中心点移动到文字正中
-            2. 坐标(0,0)时，中心点为文字左下角点
-            3. 所以：横坐标左移一半长，纵坐标下移一半宽
-            */
-            ctx.fillText(txt, -wText / 2, hText / 2);
-        }
-    </script> -->
     <script>
-        var c = document.getElementById('mycv');  // 找到canvas元素
-        var ctx=c.getContext("2d");               // 创建contex对象t
+        function draw(shi,fen,miao){
+            var c = document.getElementById('mycv');  // 找到canvas元素
+            var ctx=c.getContext("2d");               // 创建contex对象
 
-        var rLength = 200;
-        var pX = 300;
-        var pY = 300;
+            // 重设宽高刷新页面
+            c.width = 800;
+            c.height = 600;
 
-        var PI = 3.1415926;
-        var PI2 = 2*PI;
+            var rLength = 200; //钟表的半径
+            var pX = 300; //钟表的中心点坐标
+            var pY = 300;
 
-        var point = 1;
+            var PI = 3.1415926;
+            var PI2 = 2*PI;
 
-        ctx.beginPath();
-        ctx.arc(pX,pY,rLength,0,2*Math.PI);            // 绘制一个圆形
-        ctx.stroke();
+            var point = 1;
+
+            // 绘制钟表外围最大的圆
+            ctx.beginPath();
+            ctx.arc(pX,pY,rLength,0,2*Math.PI);
+            ctx.stroke();
 
 
-        for (var i = 1; i <= 60; i++) {
-            var deg = i *  PI2 / 60;
-            var x1 = rLength * Math.cos(deg);
-            var y1 = rLength * Math.sin(deg);
-            var lLength = rLength - 5 ;
-            point = 1;
-            if(i%5 === 0){
-                lLength -= 5;
-                point = 3;
+            for (var i = 1; i <= 60; i++) {
+                var deg = i *  PI2 / 60;
+                var x1 = rLength * Math.cos(deg);
+                var y1 = rLength * Math.sin(deg);
+                var lLength = rLength - 5 ;
+                point = 1;
+                if(i%5 === 0){ // 每隔五个刻度画大一点
+                    lLength -= 5;
+                    point = 3;
 
-            }
-            var x2 = lLength * Math.cos(deg);
-            var y2 = lLength * Math.sin(deg);
-
-            drawLine(ctx,pX+x1,pY-y1,pX+x2,pY-y2,'#000',point);
-
-            if(i%5 === 0){
-                var tLength = rLength - 30;
-                var x3 = tLength * Math.cos(deg);
-                var y3 = tLength * Math.sin(deg);
-                var text = (15-i/5)%12;
-                if(15-i/5 === 12){
-                    text = 12;
                 }
-                drawClockFont(ctx,text,pX+x3,pY-y3)
+                var x2 = lLength * Math.cos(deg);
+                var y2 = lLength * Math.sin(deg);
+
+                // 绘制钟表上的刻度
+                drawLine(ctx,pX+x1,pY-y1,pX+x2,pY-y2,'#000',point);
+
+                // 绘制钟表上的数字
+                if(i%5 === 0){
+                    var tLength = rLength - 30;
+                    var x3 = tLength * Math.cos(deg);
+                    var y3 = tLength * Math.sin(deg);
+                    var text = (15-i/5)%12;
+                    if(15-i/5 === 12){
+                        text = 12;
+                    }
+                    drawClockFont(ctx,text,pX+x3,pY-y3);
+                }
+
             }
+
+
+            // 绘制钟表三个指针
+            drawClockLine(ctx,pX,pY,110,shi,'#000',8);
+            drawClockLine(ctx,pX,pY,160,fen,'#000',6);
+            drawClockLine(ctx,pX,pY,180,miao,'red',1);
+
+            // 绘制中心圆点
+            ctx.beginPath();
+            ctx.arc(pX,pY,6,0,2*Math.PI);
+            ctx.fillStyle="red";
+            ctx.fill();
+        }
+
+        function TimeUp(){
+            // 获取系统时间
+            var d = new Date();
+            var hour = d.getHours();
+            var mint = d.getMinutes();
+            var second = d.getSeconds();
+            if(hour > 12){
+                hour -= 12;
+            }
+            var ok = false; // 阻止算法计数一次
+            // 这两个用来计算不足一个单位的偏移
+            var mints = mint;
+            var hours = hour;
+
+            // 设置定时器刷新钟表指针页面
+            var setInter = setInterval(function () {
+                if(ok){
+                    second += 0.05;
+                    if(second===60){
+                        second = 0;
+                        mint += 1;
+                        if(mint === 60){
+                            hour += 1;
+                            if(hour === 12){
+                                hour = 0;
+                            }
+                        }
+                    }
+                    mints = mint + second / 60.0;
+                    hours = hour + mint / 60.0;
+                }else{
+                    ok = true;
+                }
+                draw(90-hours*30,90-mints*6,90-second*6);
+            }, 50);
+
+            // 每隔一分钟重新校准系统时间
+            var setcheck = setInterval(function(){
+                d = new Date();
+                hour = d.getHours();
+                mint = d.getMinutes();
+                second = d.getSeconds();
+                if(hour > 12){
+                    hour -= 12;
+                }
+                mints = mint;
+                hours = hour;
+                ok = false;
+            },60000);
 
         }
-        // drawPointLine(ctx,100,100,400,300);
+
+
+        TimeUp(); // 钟表启动函数
+
+
+
+        //*******************下面是功能函数***************
+
+        // 绘制钟表上的数字,纠正位移
         function drawClockFont(c,text,xText,yText){
             var { width: wText } = c.measureText(text);
-            console.log(wText);
             var fontSize = 30;
             drawFont(c,text,xText-wText-2,yText+fontSize/3,0,fontSize);
         }
+
+        // 绘制钟表指针,从顶点定长定角度的线段
+        function drawClockLine(c,x1,y1,length,rote,color='#000',width=1){
+            var deg = Math.PI / 180 * rote;
+            var x2 = length * Math.cos(deg);
+            var y2 = length * Math.sin(deg);
+            drawLine(c, x1, y1, x1 + x2, y1 - y2, color, width);
+        }
+
         /**
          *  绘制字体
          *  对象,文本,起始坐标,旋转度数,字体大小,颜色,字体
@@ -109,6 +170,7 @@
             c.fillText(Text, -wText / 2, fontSize / 2);
             c.restore();
         }
+
         /**
          *  画直线
          *  对象,起始坐标,结束坐标,颜色,线宽
@@ -122,87 +184,6 @@
             c.strokeStyle = color;
             c.stroke();
         }
-
-        /***
-         * 画虚线
-         * 对象,起始点坐标,结束点坐标,颜色,线宽,间隙宽,段长
-         * 核心: 计算起始点角度,判断x和y正负,画短线
-         * */
-         function drawPointLine(c, x1, y1, x2, y2, gapLength=3, pointLength=8,color='#000', width=1 ) {
-            var k = Math.abs(y2 - y1) / Math.abs(x2 - x1);
-            var deg = Math.atan(k);
-            var gapx = gapLength * Math.cos(deg);
-            var gapy = gapLength * Math.sin(deg);
-            var poix = pointLength * Math.cos(deg);
-            var poiy = pointLength * Math.sin(deg);
-            if (x2 - x1 < 0) {
-                if (y2 - y1 < 0) {
-                    for (var x = x1, y = y1; x > x2;) {
-                        drawLine(c, x, y, x - poix, y - poiy, color, width);
-                        x = x - poix - gapx;
-                        y = y - poiy - gapy;
-                    }
-                } else {
-                    for (var x = x1, y = y1; x > x2;) {
-                        drawLine(c, x, y, x - poix, y + poiy, color, width);
-                        x = x - poix - gapx;
-                        y = y + poiy + gapy;
-                    }
-                }
-            } else {
-                if (y2 - y1 < 0) {
-                    for (var x = x1, y = y1; x < x2;) {
-                        drawLine(c, x, y, x + poix, y - poiy, color, width);
-                        x = x + poix + gapx;
-                        y = y - poiy - gapy;
-                    }
-                } else {
-                    for (var x = x1, y = y1; x < x2;) {
-                        drawLine(c, x, y, x + poix, y + poiy, color, width);
-                        x = x + poix + gapx;
-                        y = y + poiy + gapy;
-                    }
-                }
-            }
-        }
-        /*
-        ctx.fillStyle="#FF0000";
-        ctx.fillRect(0,0,150,75);                 // 绘制一个矩形
-
-        ctx.moveTo(0,0);
-        ctx.lineTo(200,100);                      // 绘制一条线
-        ctx.stroke();
-
-        ctx.beginPath();
-        ctx.arc(95,50,40,0,2*Math.PI);            // 绘制一个圆形
-        ctx.stroke();
-
-        ctx.font="30px Arial";
-        ctx.fillText("Hello World",100,200);        // 打印一串文字
-        ctx.strokeText("Hello World",100,240);      // 打印空心文字
-
-
-        // 创建渐变
-        var grd=ctx.createLinearGradient(100,300,300,500);
-        grd.addColorStop(0,"red");
-        grd.addColorStop(0.3,"white");
-        grd.addColorStop(0.5,"blue");
-        grd.addColorStop(0.7,"white");
-        grd.addColorStop(1,"green");
-
-        // 填充渐变
-        ctx.fillStyle=grd;
-        ctx.fillRect(100,300,200,200);
-
-        var grd=ctx.createRadialGradient(400,100,5,415,110,100);
-        grd.addColorStop(0,"red");
-        grd.addColorStop(1,"white");
-
-        // Fill with gradient
-        ctx.fillStyle=grd;
-        ctx.fillRect(350,60,150,100);
-        */
-
 
 
     </script>
