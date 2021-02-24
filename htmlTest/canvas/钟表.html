@@ -21,12 +21,18 @@
             c.width = 800;
             c.height = 600;
 
-            var rLength = 200; //钟表的半径
+            var rateClock = 0.8;
+            var rLength = 200 * rateClock; //钟表的半径
             var pX = 300; //钟表的中心点坐标
             var pY = 300;
 
-            var PI = 3.1415926;
-            var PI2 = 2*PI;
+            var shiLength = 110 * rateClock;
+            var fenLength = 160 * rateClock;
+            var miaoLength = 180 * rateClock;
+
+            var Scalelength = 5 * rateClock;
+            var NumSize = 30 ;
+
 
             var point = 1;
 
@@ -37,13 +43,13 @@
 
 
             for (var i = 1; i <= 60; i++) {
-                var deg = i *  PI2 / 60;
+                var deg = i *  Math.PI / 30;
                 var x1 = rLength * Math.cos(deg);
                 var y1 = rLength * Math.sin(deg);
-                var lLength = rLength - 5 ;
+                var lLength = rLength - Scalelength ;
                 point = 1;
                 if(i%5 === 0){ // 每隔五个刻度画大一点
-                    lLength -= 5;
+                    lLength -= Scalelength;
                     point = 3;
 
                 }
@@ -55,23 +61,23 @@
 
                 // 绘制钟表上的数字
                 if(i%5 === 0){
-                    var tLength = rLength - 30;
+                    var tLength = rLength - NumSize;
                     var x3 = tLength * Math.cos(deg);
                     var y3 = tLength * Math.sin(deg);
                     var text = (15-i/5)%12;
                     if(15-i/5 === 12){
                         text = 12;
                     }
-                    drawClockFont(ctx,text,pX+x3,pY-y3);
+                    drawClockFont(ctx,text,pX+x3,pY-y3,NumSize);
                 }
 
             }
 
 
             // 绘制钟表三个指针
-            drawClockLine(ctx,pX,pY,110,shi,'#000',8);
-            drawClockLine(ctx,pX,pY,160,fen,'#000',6);
-            drawClockLine(ctx,pX,pY,180,miao,'red',1);
+            drawClockLine(ctx,pX,pY,shiLength,shi,'#000',8);
+            drawClockLine(ctx,pX,pY,fenLength,fen,'#000',6);
+            drawClockLine(ctx,pX,pY,miaoLength,miao,'red',1);
 
             // 绘制中心圆点
             ctx.beginPath();
@@ -91,8 +97,8 @@
             }
             var ok = false; // 阻止算法计数一次
             // 这两个用来计算不足一个单位的偏移
-            var mints = mint;
-            var hours = hour;
+            var mints = mint + second / 60.0;
+            var hours = hour + mint / 60.0;
 
             // 设置定时器刷新钟表指针页面
             var setInter = setInterval(function () {
@@ -116,7 +122,7 @@
                 draw(90-hours*30,90-mints*6,90-second*6);
             }, 50);
 
-            // 每隔一分钟重新校准系统时间
+            // 每隔一小时重新校准系统时间
             var setcheck = setInterval(function(){
                 d = new Date();
                 hour = d.getHours();
@@ -125,8 +131,8 @@
                 if(hour > 12){
                     hour -= 12;
                 }
-                mints = mint;
-                hours = hour;
+                mints = mint + second / 60.0;
+                hours = hour + mint / 60.0;
                 ok = false;
             },60000);
 
@@ -140,9 +146,8 @@
         //*******************下面是功能函数***************
 
         // 绘制钟表上的数字,纠正位移
-        function drawClockFont(c,text,xText,yText){
+        function drawClockFont(c,text,xText,yText,fontSize){
             var { width: wText } = c.measureText(text);
-            var fontSize = 30;
             drawFont(c,text,xText-wText-2,yText+fontSize/3,0,fontSize);
         }
 
