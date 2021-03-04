@@ -7,12 +7,14 @@
     c.save();
     c.font = `${fontSize}px `+familyFont;
     c.fillStyle = fontStyle;
+    // c.strokeStyle = fontStyle;
 
     var { width: wText } = c.measureText(Text);
-    c.translate(xText + wText / 2, yText - fontSize / 2);
+    // c.translate(xText + wText / 2, yText - fontSize / 2);
+    c.translate(xText, yText);
     var deg = Math.PI / 180 * roteSize;
     c.rotate(deg);
-    c.fillText(Text, -wText / 2, fontSize / 2);
+    c.fillText(Text, -wText / 2, fontSize / 2 - fontSize/7.0);
     c.restore();
 }
 /***
@@ -20,7 +22,7 @@
  * 对象,起始点坐标,结束点坐标,颜色,线宽,间隙宽,段长
  * 核心: 计算起始点角度,判断x和y正负,画短线
  * */
-function drawPointLine(c, x1, y1, x2, y2, gapLength=3, pointLength=8,color='#000', width=1 ) {
+ function drawPointLine(c, x1, y1, x2, y2, gapLength=3, pointLength=8,color='#000', width=1 ) {
     var k = Math.abs(y2 - y1) / Math.abs(x2 - x1);
     var deg = Math.atan(k);
     var gapx = gapLength * Math.cos(deg);
@@ -63,7 +65,7 @@ function drawPointLine(c, x1, y1, x2, y2, gapLength=3, pointLength=8,color='#000
  * 对象,起始点坐标,结束点坐标,线长,角度,颜色,线宽
  * 核心: 计算角度和线长确定结束点坐标
  * */
-function drawRayLine(c,x1,y1,length,rote,color='#000',width=1){
+ function drawRayLine(c,x1,y1,length,rote,color='#000',width=1){
     var deg = Math.PI / 180 * rote;
     var x2 = length * Math.cos(deg);
     var y2 = length * Math.sin(deg);
