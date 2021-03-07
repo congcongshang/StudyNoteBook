@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript速查表</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        #head{
+            padding: 5px 20px;
+        }
+        #title{
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        #body{
+            padding-left: 20px;
+        }
+
+
+        h3{
+            margin: 9px 0px;
+        }
+        .ctable2{
+            display: grid; 
+            width: 70%;
+            grid-template-columns: 200px 1fr;
+            /* grid-template-rows: 50px 50px;  */
+            /* grid-gap: 10px 20px; */
+            border-right: 1px solid #aaa;
+            border-bottom: 1px solid #aaa;
+        }
+        .ctable2 div{
+            border-left:1px solid #aaa;
+            border-top: 1px solid #aaa;
+            padding: 9px;
+        }
+        .ctable2 div.single{
+            background: #F5F5F5;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="head"><h1>JavaScript速查表</h1></div>
+        <hr />
+        <div id="title"><a href="javascript:void(0)" onclick="Show(1)">home</a>&gt;</div>
+        <div id="body">
+            <h3>数组</h3>
+            <div class="ctable2">
+                <div class="single">push()</div><div class="single">尾部添加元素</div>
+                <div>pop()</div><div>尾部删除元素</div>
+                <div class="single">unshift()</div><div class="single">头部添加元素</div>
+                <div>shift()</div><div>头部删除元素</div>
+            </div>
+        </div>
+    </main>
+    <script>
+        function Show(item){
+            var obj = JSON.parse(jsonTable);
+            // console.log(obj);
+            addList(obj);
+        }
+        function addList(obj){
+            var body = document.querySelector("#body");
+            var name = document.createElement("h3");
+            name.innerHTML = obj.name;
+            body.appendChild(name);
+            
+            var box = document.createElement("div");
+            box.className = "ctable2";
+            for(var i=0;i<obj.function.length;i++){
+                var Fname = document.createElement("div");
+                Fname.innerHTML = obj.function[i].name;
+                box.appendChild(Fname);
+                
+                var Ftitle = document.createElement("div");
+                Ftitle.innerHTML = obj.function[i].title;
+                box.appendChild(Ftitle);  
+                if(i%2 === 0){
+                    Fname.className = "single";
+                    Ftitle.className = "single";
+                }     
+            }
+            body.appendChild(box);
+        }
+        var jsonTable =`{
+            "name":"数组","function":[
+                {"name":"push()","title":"尾部添加元素"},
+                {"name":"pop()","title":"尾部删除元素"},
+                {"name":"unshift()","title":"头部添加元素"},
+                {"name":"shift()","title":"头部删除元素"}
+            ]
+        }`;
+    </script>
+</body>
+</html>
