@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p>可以将左侧文本中的换行符去除掉，并给"添加\使文本适合网页字符串</p>
+    <p>将左侧字符串，去掉换行，去掉多余空格进行压缩</p>
+    <textarea id="in" rows="30" cols="80" spellcheck="false"></textarea>
+    <textarea id="out" rows="30" cols="80" spellcheck="false"></textarea>
+    <!--  spellcheck="false" -->
+    <br/>
+    <button onclick="change()">转换成字符串</button>
+    <button onclick="compress()">仅压缩文本</button>
+    <script>
+        function change(){
+            var test_in = document.getElementById('in');
+            var out = document.getElementById('out');
+
+            out.value = changeString(test_in.value);
+            out.select();
+        }
+        function compress(){
+            var test_in = document.getElementById('in');
+            var out = document.getElementById('out');
+             out.value = compressWord(test_in.value);
+            out.select();
+        }
+        function compressWord(str){
+            str = str.replace(/[\n]/ig,''); // 删除换行
+            str = str.replace(/\s+/g," ");  // 不能去掉所有的空格
+            return str;
+        }
+        function changeString(str){
+            // str = str.replace(/[\n]/ig,''); // 删除换行
+            str = str.replace(/[\n]/ig,'\\n');// 换行用\n替换
+            str = str.replace(/\"/g,"\\\"");  // 可以给双引号加注释
+            str = str.replace(/\s+/g," ");    // 不能去掉所有的空格
+            return str;
+        }
+
+    </script>
+</body>
+</html>
+
