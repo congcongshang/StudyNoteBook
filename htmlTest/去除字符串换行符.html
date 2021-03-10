@@ -13,6 +13,7 @@
     <br/>
     <button onclick="change()">转换成字符串</button>
     <button onclick="compress()">仅压缩文本</button>
+    <button onclick="changeShow()">代码HTML化</button>
     <script>
         function change(){
             var test_in = document.getElementById('in');
@@ -24,8 +25,19 @@
         function compress(){
             var test_in = document.getElementById('in');
             var out = document.getElementById('out');
-             out.value = compressWord(test_in.value);
+            out.value = compressWord(test_in.value);
             out.select();
+        }
+        function changeShow(){
+            var test_in = document.getElementById('in');
+            var out = document.getElementById('out');
+            out.value = changeS(test_in.value);
+            out.select();
+        }
+        function changeS(str){
+            str = str.replace(/[\n]/ig,'<br/>'); // 删除换行
+            str = str.replace(/\s/g,"&nbsp;&nbsp;");  // 不能去掉所有的空格
+            return str;
         }
         function compressWord(str){
             str = str.replace(/[\n]/ig,''); // 删除换行

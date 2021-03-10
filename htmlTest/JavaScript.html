@@ -7,15 +7,22 @@
     <title>JavaScript速查表</title>
     <style>
         *{margin: 0;padding: 0;}
+        a{
+            color: black;
+            text-decoration: none;
+        }
+
         #head{
-            padding: 5px 20px;
+            padding: 5px 10%;
         }
         #title{
-            padding-left: 20px;
+            padding-left: 10%;
             margin-bottom: 20px;
         }
         #body{
-            padding-left: 20px;
+            margin-bottom: 200px;
+            padding-left: 10%;
+            width: 70%;
         }
 
 
@@ -23,8 +30,7 @@
             margin: 9px 0px;
         }
         .ctable2{
-            display: grid; 
-            width: 70%;
+            display: grid;
             grid-template-columns: 200px 1fr;
             /* grid-template-rows: 50px 50px;  */
             /* grid-gap: 10px 20px; */
@@ -45,54 +51,71 @@
     <main>
         <div id="head"><h1>JavaScript速查表</h1></div>
         <hr />
-        <div id="title"><a href="javascript:void(0)" onclick="Show(1)">home</a>&gt;</div>
+        <div id="title"><!-- <a href="javascript:void(0)" onclick="Show(1)">home</a>&gt; --></div>
         <div id="body">
-            <h3>数组</h3>
+           <!--  <h3>数组</h3>
             <div class="ctable2">
-                <div class="single">push()</div><div class="single">尾部添加元素</div>
+                <div class="single"><a href="#">push()</a></div><div class="single">尾部添加元素</div>
                 <div>pop()</div><div>尾部删除元素</div>
                 <div class="single">unshift()</div><div class="single">头部添加元素</div>
                 <div>shift()</div><div>头部删除元素</div>
-            </div>
+            </div> -->
         </div>
     </main>
     <script>
-        function Show(item){
+        function Show(){
             var obj = JSON.parse(jsonTable);
-            // console.log(obj);
-            addList(obj);
+
+            for (var i = 0; i < obj.length; i++) {
+                addList(obj[i]);
+            }
         }
         function addList(obj){
             var body = document.querySelector("#body");
             var name = document.createElement("h3");
             name.innerHTML = obj.name;
             body.appendChild(name);
-            
+
             var box = document.createElement("div");
             box.className = "ctable2";
             for(var i=0;i<obj.function.length;i++){
-                var Fname = document.createElement("div");
+                var Fname = document.createElement("a");
                 Fname.innerHTML = obj.function[i].name;
-                box.appendChild(Fname);
-                
+                Fname.href = obj.function[i].article;
+                var Fname1 = document.createElement("div");
+                Fname1.appendChild(Fname);
+                box.appendChild(Fname1);
+
                 var Ftitle = document.createElement("div");
                 Ftitle.innerHTML = obj.function[i].title;
-                box.appendChild(Ftitle);  
+                box.appendChild(Ftitle);
                 if(i%2 === 0){
-                    Fname.className = "single";
+                    Fname1.className = "single";
                     Ftitle.className = "single";
-                }     
+                }
             }
             body.appendChild(box);
         }
-        var jsonTable =`{
-            "name":"数组","function":[
-                {"name":"push()","title":"尾部添加元素"},
-                {"name":"pop()","title":"尾部删除元素"},
-                {"name":"unshift()","title":"头部添加元素"},
-                {"name":"shift()","title":"头部删除元素"}
+        var jsonTable =`[
+        {
+            "name":"数组",
+            "function":[
+            {"name":"push()","article":"JavaScript/push.html","title":"向数组的末尾添加一个或更多元素，并返回新的长度。"},
+            {"name":"pop()","article":"JavaScript/pop.html","title":"尾部删除元素"},
+            {"name":"unshift()","article":"JavaScript/unshift.html","title":"头部添加元素"},
+            {"name":"shift()","article":"JavaScript/shift.html","title":"头部删除元素"}
             ]
-        }`;
+        },{
+            "name":"数组",
+            "function":[
+            {"name":"push()","article":"JavaScript/push.html","title":"尾部添加元素"},
+            {"name":"pop()","article":"JavaScript/push.html","title":"尾部删除元素"},
+            {"name":"unshift()","article":"JavaScript/push.html","title":"头部添加元素"},
+            {"name":"shift()","article":"JavaScript/push.html","title":"头部删除元素"}
+            ]
+        }
+        ]`;
+        Show();
     </script>
 </body>
 </html>

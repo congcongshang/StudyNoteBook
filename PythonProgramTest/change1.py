@@ -9,7 +9,7 @@ def writeFile(filename,data):
 
 def openFile(filename):
     # 打开文件
-    f = open(filename, "r", encoding='utf-8')
+    f = open(filename, "r", encoding='gbk')
     # print("文件名为: ", f.name)
     res = f.readlines()
     # for line in f.readlines():  # 依次读取每行
@@ -21,22 +21,27 @@ def openFile(filename):
     return res
 
 def main():
-    result = openFile("teste.py")
+    result = openFile("火币网明细导出.csv")
     res = []
     for line in result:
+        cc = 0
         re = ""
         ok = True
         for i in line:
-            if i == " " and ok:
+            if i == "\t" and ok:
                 re += ','
                 ok = False
+                # else:
+                #     cc = 1
+                #     re += ' '
+                #     ok = False
             else:
-                if i != " ":
+                if i != "\t":
                     re += i
                     ok = True
         res.append(re)
 
-    writeFile("test.csv",res)
+    writeFile("火币网明细导出1.csv",res)
 
 
 
