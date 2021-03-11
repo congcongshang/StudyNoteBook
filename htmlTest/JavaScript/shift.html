@@ -64,7 +64,7 @@
     <main>
         <div id="head"><h1>JavaScript速查表</h1></div>
         <hr />
-        <div id="title"><a href="../JavaScript.html">home</a>&gt;push</div>
+        <div id="title"><a href="../JavaScript.html">home</a>&gt;shift</div>
         <div id="body">
 
         </div>
@@ -119,35 +119,32 @@
         {
             "name":"定义",
             "key":1,
-            "value":"push() 方法可向数组的末尾添加一个或多个元素，并返回新的长度。"
+            "value":"shift() 方法用于把数组的第一个元素从其中删除，并返回第一个元素的值。"
         },{
             "name":"语法",
             "key":1,
-            "value":"arrayObject.push(newelement1,newelement2,....,newelementX)"
+            "value":"arrayObject.shift()"
         },{
             "name":"参数",
-            "key":2,
+            "key":0,
             "value":[
-            {"name":"newelement1","Description":"必需。要添加到数组的第一个元素。"},
-            {"name":"newelement2","Description":"可选。要添加到数组的第二个元素。"},
-            {"name":"newelementX","Description":"可选。可添加多个元素。"}
             ]
         },{
             "name":"返回值",
             "key":1,
-            "value":"把指定的值添加到数组后的新长度。"
+            "value":"数组原来的第一个元素的值。"
         },{
             "name":"说明",
             "key":1,
-            "value":"push() 方法可把它的参数顺序添加到 arrayObject 的尾部。 它直接修改 arrayObject，而不是创建一个新的数组。 push() 方法和 pop() 方法使用数组提供的先进后出栈的功能。"
+            "value":"如果数组是空的，那么 shift() 方法将不进行任何操作，返回 undefined 值。请注意，该方法不创建新数组，而是直接修改原有的 arrayObject。"
         },{
             "name":"实例",
             "key":3,
-            "value":"&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;arr&nbsp;=&nbsp;[\\"zhao\\",\\"li\\",\\"wang\\"];<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;arr.push(\\"wei\\");&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;添加一个元素<br/>&nbsp;&nbsp;&nbsp;&nbsp;console.log(arr);<br/>&nbsp;&nbsp;&nbsp;&nbsp;console.log(arr.length);<br/><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;arr.push(\\"shang\\",\\"deng\\",\\"tian\\");&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;添加三个元素<br/>&nbsp;&nbsp;&nbsp;&nbsp;console.log(arr);<br/>&nbsp;&nbsp;&nbsp;&nbsp;console.log(arr.length);<br/>"
+            "value":"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;&nbsp;arr&nbsp;&nbsp;=&nbsp;&nbsp;[\\"zhao\\",\\"li\\",\\"wang\\"];<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;&nbsp;item&nbsp;&nbsp;=&nbsp;&nbsp;arr.shift();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;&nbsp;删除一个元素<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(item);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(arr);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(arr.length);"
         },{
             "name":"结果",
             "key":3,
-            "value":"&nbsp;&nbsp;&nbsp;&nbsp;[\\"zhao\\",&nbsp;\\"li\\",&nbsp;\\"wang\\",&nbsp;\\"wei\\"]<br/>&nbsp;&nbsp;&nbsp;&nbsp;4<br/>&nbsp;&nbsp;&nbsp;&nbsp;[\\"zhao\\",&nbsp;\\"li\\",&nbsp;\\"wang\\",&nbsp;\\"wei\\",&nbsp;\\"shang\\",&nbsp;\\"deng\\",&nbsp;\\"tian\\"]<br/>&nbsp;&nbsp;&nbsp;&nbsp;7"
+            "value":"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\"zhao\\"<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\\"li\\",\\"wang\\"]<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2"
         }
         ]`;
         Show();

@@ -35,8 +35,10 @@
             out.select();
         }
         function changeS(str){
+            str = str.replace(/</g,"&lt;");  // 去掉左尖括号
+            str = str.replace(/>/g,"&gt;");  // 去掉右尖括号
             str = str.replace(/[\n]/ig,'<br/>'); // 删除换行
-            str = str.replace(/\s/g,"&nbsp;&nbsp;");  // 不能去掉所有的空格
+            str = str.replace(/\s/g,"&nbsp;");  // 不能去掉所有的空格
             str = str.replace(/\"/g,"\\\\\"");  // 可以给双引号加注释
             return str;
         }
