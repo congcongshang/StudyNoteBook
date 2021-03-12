@@ -21,30 +21,36 @@
             var ctx=c.getContext("2d");               // 创建contex对象
 
             var text = "Hello World"
+            var fontSize = 20;
+            var familyFont = '宋体';
+            var fontStyle = 'blue';
+
+            ctx.font = `${fontSize}px `+familyFont;
+            ctx.fillStyle = fontStyle;
             var { width: wText } = ctx.measureText(text);
             // drawFont(ctx,text,200,200);
             ctx.fillText(text,200,200);
-            drawRoundRect(ctx,200-wText,200-10,wText*2,20,0);
+            drawRoundRect(ctx,200,200+5,wText,fontSize,5);
+            drawRoundRect(ctx,200,200+5,wText,fontSize,0,'green',1);
         }
         draw();
 
-        function drawFont(c,Text,xText,yText,fontSize=20,fontStyle='#000',familyFont='宋体'){
-
-            c.font = `${fontSize}px `+familyFont;
-            c.fillStyle = fontStyle;
-
-            var { width: wText } = c.measureText(Text);
-
-            c.fillText(Text, -wText / 2, fontSize / 2 - fontSize/7.0);
-
-        }
-
-        function drawRoundRect(c,x,y,w,h,r=0,color='red',width=1){
+        function drawRoundRect(c,x,y,w,h,r=0,color='red',width=20){
             c.beginPath();
-            c.moveTo(x, y);
-            c.lineTo(x+w, y);
-            c.moveTo(x, y+h);
-            c.lineTo(x+w, y+h);
+            // 下边线
+            var wh=width/2;
+            c.moveTo(x, y+wh);
+            c.lineTo(x+w, y+wh);
+            // 上边线
+            c.moveTo(x, y-h-wh);
+            c.lineTo(x+w, y-h-wh);
+            // 右边线
+            c.moveTo(x+w+wh, y-h);
+            c.lineTo(x+w+wh, y);
+            // 左边线
+            c.moveTo(x-wh, y-h);
+            c.lineTo(x-wh, y);
+            // c.arcTo()
             c.closePath();
             c.lineWidth = width;
             c.strokeStyle = color;
