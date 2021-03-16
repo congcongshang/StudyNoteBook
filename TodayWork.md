@@ -25,6 +25,15 @@
 
 ---
 
+PaintedCat@20210315
+
+1.  阅读HTML5书籍一本
+2.  freecodecamp练习
+3.  文职训练, 数学要开始学习了
+4.  算法来一个呗
+
+---
+
 PaintedCat@20210314 <span id="BJ1">{标记1}</span>
 
 1. B站物理课程, 数学课程, 编程课程(前端, python, C语言),励志与娱乐

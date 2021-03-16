@@ -1,3 +1,15 @@
-名称 你好   我是测试 haha woshi ceshi
-nn v 123 56,4    20 21年3月9日
-测试 对不 算   法  怎办
+import json
+
+data= {
+"msg": {
+    "crc": 0, "msg_body": "How are you ?","msg_len": 88,
+    "recv_id": 319371,
+    "send_id": 319371,
+    "send_time": 0,
+    "type": 96
+  },
+"msgLen":90
+}
+
+
+print(json.dumps(data, sort_keys=True, indent=2)) # 排序并且缩进两个字符输出
