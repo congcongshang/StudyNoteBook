@@ -25,6 +25,23 @@
 
 ---
 
+PaintedCat@20210328
+
+1. 文职基础知识教材，题库，粉笔课程，专项练习书籍
+2. 专业课数学，物理，教育学：教材，题库，哔哩哔哩高中数学物理
+3. PHP中文网学习  **<span style="color:red;">完成</span>**
+4. FCC前端练习题   **<span style="color:red;">完成</span>**
+5. 大鹏教育课程录播
+6. LeetCode练习题
+7. 极客时间课程
+8. 华为学云网络基础知识
+9. python入门书籍-微信读书
+10. HTML5书籍-微信读书 
+
+step by step， piece by piece 
+
+---
+
 PaintedCat@20210315
 
 1.  阅读HTML5书籍一本

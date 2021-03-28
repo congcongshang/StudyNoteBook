@@ -12,7 +12,7 @@
 
 -   p           段落
 
--   ```<!-- 注释内容 -->```  
+-   ```<!-- 注释内容 -->```   1.写给其他程序员 2.暂时不用的代码
 
 -   img       图片        src-图片路径  alt-替换文字
 
@@ -46,7 +46,7 @@
 
 - head  body                头部信息和文档主体
 
-- html5元素:       header、footer、nav、video、article、section、 main
+- html5元素:       main、header、footer、nav、video、article、section
 
 <a name="egA00101">eg.01:</a>
 
