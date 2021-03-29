@@ -27,8 +27,8 @@
 
 PaintedCat@20210329
 
-1.  极客时间-程序员的数学基础课
-2.  重学FCC练习
+1.  极客时间-程序员的数学基础课  **<span style="color:red;">完成</span>**
+2.  重学FCC练习  **<span style="color:red;">完成</span>**
 3.  数量关系教材
 4.  bilibili高中数学课程
 5.  基础教材
