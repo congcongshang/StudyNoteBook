@@ -25,13 +25,25 @@
 
 ---
 
+PaintedCat@20210330
+
+1.  bilibili高中数学课程
+2.  微信读书python和HTML5
+3.  极客时间-程序员的数学基础课
+4.  数量关系教材
+5.  基础知识教材
+6.  重学FCC前端练习
+7.  高等数学视频学习
+
+---
+
 PaintedCat@20210329
 
 1.  极客时间-程序员的数学基础课  **<span style="color:red;">完成</span>**
 2.  重学FCC练习  **<span style="color:red;">完成</span>**
 3.  数量关系教材
-4.  bilibili高中数学课程
-5.  基础教材
+4.  bilibili高中数学课程  **<span style="color:red;">完成</span>**
+5.  公共知识基础教材
 6.  专业课视频
 
 知识是一点一点积累的,时间是一点一点浪费的! 加加油!
