@@ -59,17 +59,18 @@
 
 ## <a name="A002">2. Basic CSS</a>
 
-| 属性             | 含义     | 数值                        |
-| :--------------- | :------- | :-------------------------- |
-| color            | 颜色     | hsl()  rgb() rgba() #FFFFFF |
-| font-size        | 字体大小 | px                          |
-| font-family      | 字体样式 | 黑体/微软雅黑/宋体/楷体     |
-| border           | 边框     |                             |
-| border-width     | 边框宽度 | px                          |
-| border-style     | 边框样式 | solid实现                   |
-| border-color     | 边框颜色 | 同 color                    |
-| border-radius    | 圆角     | px 或 %                     |
-| background-color | 背景颜色 |                             |
-| padding          | 内边距   |                             |
-| margin           | 外边距   |                             |
+| 属性             | 含义     | 数值                                         |
+| :--------------- | :------- | :------------------------------------------- |
+| color            | 颜色     | hsl()  \| rgb() \| rgba() \| #FFFFFF \| #FFF |
+| font-size        | 字体大小 | px                                           |
+| font-family      | 字体样式 | 黑体/微软雅黑/宋体/楷体                      |
+| border           | 边框     | 宽度  样式  颜色                             |
+| border-width     | 边框宽度 | px                                           |
+| border-style     | 边框样式 | solid实现                                    |
+| border-color     | 边框颜色 | 同 color                                     |
+| border-radius    | 圆角     | px 或 %                                      |
+| background-color | 背景颜色 |                                              |
+| padding          | 内边距   | 上右下左 \| 上(左右)下 \| (上下)(左右)       |
+| margin           | 外边距   |                                              |
+|                  |          |                                              |
 
