@@ -77,3 +77,7 @@
 优先级: 前类 - 后类 - ID - 内联 - !important
 
 颜色: 
+
+字体降级: font-family: Helvetica, sans-serif;
+
+CSS变量:  创建 --变量名:变量值;    使用 var(--变量名);

@@ -1,0 +1,22 @@
+由于git pages突然无法访问,重回寻找国内的免费服务器gitee,未果,故重新调整个人服务器搭建静态个人网站.
+重新在阿里云购买ssl证书,由于个人免费版的故1-15分钟就可以出证书.
+很幸运今天一切顺利,记录过程于此:
+1.重置centos服务器
+2.建立/var/www文件夹为网站根目录,并把静态网页放进去
+3.yum install nginx 安装nginx软件
+4.whereis nginx 寻找到nginx配置文件目录/etc/nginx/nginx.conf
+5.将下载好的ssl文件放置到/etc/nginx/cert目录下
+6.修改nginx配置文件 如下:
+server_name  shangcongcong.com; #改成自己的域名
+root         /var/www;          #改成自己的网站文件夹
+ssl_certificate "/etc/nginx/cert/5460175_shangcongcong.com.pem";
+ssl_certificate_key "/etc/nginx/cert/5460175_shangcongcong.com.key";
+#修改对应的两个文件名及路径
+
+443sever 同 80sever
+
+
+7.启动nginx程序 完美运行
+启动  nginx
+重启  nginx -s reload
+关闭  nginx -s stop   / quit
