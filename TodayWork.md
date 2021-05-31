@@ -25,6 +25,21 @@
 
 ---
 
+PaintedCat@20210527
+
+1.  高中数学课, 物理课
+2.  英语学习
+3.  高等数学课
+4.  Java学习
+5.  python学习
+6.  前端学习 (freecodecamp)
+7.  算法学习 (LeetCode)
+8.  大鹏教育 (PS 绘画 设计)
+9.  PPT-Excel-Word
+10.  科研 大数据理论, 机器学习算法, 论文文献
+
+---
+
 PaintedCat@20210330
 
 1.  bilibili高中数学课程
