@@ -10,27 +10,12 @@ linux 设置pycharm
 # ./pycharm.sh
 
 # 我是注释,不用理我
-class Solution:
-    def isPowerOfFour(self, n: int) -> bool:
-        if n == 1:
-            return True
-        if n % 2 == 0:
-            if n / 2 % 2 == 0:
-                return True
-            else:
-                return False
-        else:
-            return False
+# from typing import List
+from typing import List
 
 
-n = -2147483648
+def canEat(self, candiesCount: List[int], queries: List[List[int]]) -> List[bool]:
+    return [0,0]
 
-if n == 1:
-    print(True)
-if n % 2 == 0:
-    if n / 2 % 2 == 0:
-        print(True)
-    else:
-        print(False)
-else:
-    print(False)
+
+print("heool")
