@@ -50,4 +50,5 @@
 
 -   git pull  拉取已经建立过的项目,修改后add+commit,再git push就行了
 -   没有建立好公钥,重新上传公钥参考快速上手第一步
+-   如果直接修改了在git pull 之前, 可以选择git reset --hard 放弃本地修改, 再git pull 覆盖它
 
