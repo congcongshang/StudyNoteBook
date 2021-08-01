@@ -1,21 +1,17 @@
-±ğ×ÜĞ´´úÂë£¬Õâ 130¸öÍøÕ¾±ÈÕÇ¹¤×Ê¶¼ÖØÒª
-°îĞ¡Ô· ½ñÌì
-Í¼Æ¬
+åˆ«æ€»å†™ä»£ç ï¼Œè¿™ 130ä¸ªç½‘ç«™æ¯”æ¶¨å·¥èµ„éƒ½é‡è¦
+é‚¦å°è‹‘ ä»Šå¤©
+å›¾ç‰‡
 
 
 
-¹şà¶£¬´ó¼ÒÏÂÎçºÃÑ½~ÎÒÊÇÄãÃÇµÄĞ¡°îÑ§½ãÍ¼Æ¬Í¼Æ¬
-
- 
-
-¸ãÑ§Ï°
-
-
-CSDN£ºhttps://www.csdn.net/
+å“ˆå–½ï¼Œå¤§å®¶ä¸‹åˆå¥½å‘€~æˆ‘æ˜¯ä½ ä»¬çš„å°é‚¦å­¦å§å›¾ç‰‡å›¾ç‰‡
 
 
 
+æå­¦ä¹ 
 
+
+CSDNï¼šhttps://www.csdn.net/
 
 
 
@@ -44,41 +40,45 @@ CSDN£ºhttps://www.csdn.net/
 
 
 
-ÕÒÊé¼®
 
 
 
-ÊéÕ»Íø£¨¼«Á¦ÍÆ¼ö£©£ºhttps://www.bookstack.cn/
 
-ÂëÅ©Ö®¼Ò£¨¼ÆËã»úµç×ÓÊéÏÂÔØ£©£º
+æ‰¾ä¹¦ç±
+
+
+
+ä¹¦æ ˆç½‘ï¼ˆæåŠ›æ¨èï¼‰ï¼šhttps://www.bookstack.cn/
+
+ç å†œä¹‹å®¶ï¼ˆè®¡ç®—æœºç”µå­ä¹¦ä¸‹è½½ï¼‰ï¼š
 
 www.xz577.com
 
-ğ¯Ä¦ËÑÊé£ºwww.jiumodiary.com
+é¸ æ‘©æœä¹¦ï¼šwww.jiumodiary.com
 
-ÔÆº£µç×ÓÍ¼Êé¹İ£ºwww.pdfbook.cn
+äº‘æµ·ç”µå­å›¾ä¹¦é¦†ï¼šwww.pdfbook.cn
 
-ÖÜ¶Á£¨Êé¼®ËÑË÷£©£ºireadweek.com
+å‘¨è¯»ï¼ˆä¹¦ç±æœç´¢ï¼‰ï¼šireadweek.com
 
-ÖªĞù²ØÊé£ºhttp://www.zxcs.me/
+çŸ¥è½©è—ä¹¦ï¼šhttp://www.zxcs.me/
 
-½Å±¾Ö®¼Òµç×ÓÊéÏÂÔØ£º
+è„šæœ¬ä¹‹å®¶ç”µå­ä¹¦ä¸‹è½½ï¼š
 
 https://www.jb51.net/books/
 
-ËÑÊéVIP-µç×ÓÊéËÑË÷£º
+æœä¹¦VIP-ç”µå­ä¹¦æœç´¢ï¼š
 
 http://www.soshuvip.com/all.html
 
-Êé¸ñ£¨ÔÚÏß¹Å¼®Í¼Êé¹İ£©£º
+ä¹¦æ ¼ï¼ˆåœ¨çº¿å¤ç±å›¾ä¹¦é¦†ï¼‰ï¼š
 
 https://new.shuge.org/
 
-cajÔÆÔÄ¶Á£º
+cajäº‘é˜…è¯»ï¼š
 
 http://cajviewer.cnki.net/cajcloud/
 
-±Ø¿´Íø£¨ÈËÉú±Ø¿´µÄÊé¼®£©£º
+å¿…çœ‹ç½‘ï¼ˆäººç”Ÿå¿…çœ‹çš„ä¹¦ç±ï¼‰ï¼š
 
 https://www.biikan.com/
 
@@ -86,67 +86,67 @@ https://www.biikan.com/
 
 
 
-ÀäÖªÊ¶ / ºÚ¿Æ¼¼
+å†·çŸ¥è¯† / é»‘ç§‘æŠ€
 
 
 
-ÉÏ°àÃşÓã±Ø±¸£¨¼Ù×°µçÄÔÏµÍ³Éı¼¶£©£ºhttp://fakeupdate.net/
+ä¸Šç­æ‘¸é±¼å¿…å¤‡ï¼ˆå‡è£…ç”µè„‘ç³»ç»Ÿå‡çº§ï¼‰ï¼šhttp://fakeupdate.net/
 
-PIECES Æ´Í¼£¨30 ¸ö CSS ËéÆ¬½øĞĞÆ´Í¼£¬³ÊÏÖ 30 ÖÖ±ôÁÙÃğ¾øµÄ¶¯Îï£©£º
+PIECES æ‹¼å›¾ï¼ˆ30 ä¸ª CSS ç¢ç‰‡è¿›è¡Œæ‹¼å›¾ï¼Œå‘ˆç° 30 ç§æ¿’ä¸´ç­ç»çš„åŠ¨ç‰©ï¼‰ï¼š
 
 http://www.species-in-pieces.com/
 
-Í¼Æ¬Á¢ÌåÏñËØ»­£º
+å›¾ç‰‡ç«‹ä½“åƒç´ ç”»ï¼š
 
 https://pissang.github.io/voxelize-image/
 
-¸£Àûµ¥´Ê£¨Ò»¸ö²»Ì«Õı¾­µÄ±³µ¥´ÊÍøÕ¾£©£º
+ç¦åˆ©å•è¯ï¼ˆä¸€ä¸ªä¸å¤ªæ­£ç»çš„èƒŒå•è¯ç½‘ç«™ï¼‰ï¼š
 
 http://dict.ftqq.com
 
-²éÎŞ´ËÈË£¨Ë¢ĞÂÍøÕ¾£¬Õ¹ÏÖÒ»ÕÅAI Éú³ÉµÄÈËÁ³ÕÕÆ¬£©£º
+æŸ¥æ— æ­¤äººï¼ˆåˆ·æ–°ç½‘ç«™ï¼Œå±•ç°ä¸€å¼ AI ç”Ÿæˆçš„äººè„¸ç…§ç‰‡ï¼‰ï¼š
 
 https://thispersondoesnotexist.com/
 
-ÔÚÏßÖÆ×÷µØÍ¼Í¼Àı£ºhttps://mapchart.net/
+åœ¨çº¿åˆ¶ä½œåœ°å›¾å›¾ä¾‹ï¼šhttps://mapchart.net/
 
-´´Òâ¹âÏß»æ»­£ºhttp://weavesilk.com/
+åˆ›æ„å…‰çº¿ç»˜ç”»ï¼šhttp://weavesilk.com/
 
-ĞÇÏµ¹Û²ì£ºhttps://stellarium-web.org/
+æ˜Ÿç³»è§‚å¯Ÿï¼šhttps://stellarium-web.org/
 
-¼åµ°£ºhttp://jandan.net/
+ç…è›‹ï¼šhttp://jandan.net/
 
-ÔüÄĞ-Ëµ»°µÄÒÕÊõ£ºhttps://lovelive.tools/
+æ¸£ç”·-è¯´è¯çš„è‰ºæœ¯ï¼šhttps://lovelive.tools/
 
-È«ÀúÊ·£ºhttps://www.allhistory.com/
+å…¨å†å²ï¼šhttps://www.allhistory.com/
 
-iData£ºhttps://www.cn-ki.net/
+iDataï¼šhttps://www.cn-ki.net/
 
-ÊõÓïÔÚÏß£ºhttp://www.termonline.cn/
-
-
+æœ¯è¯­åœ¨çº¿ï¼šhttp://www.termonline.cn/
 
 
 
-Ğ´´úÂë
+
+
+å†™ä»£ç 
 
 
 
-GitHub£ºhttps://github.com/
+GitHubï¼šhttps://github.com/
 
-ÂëÔÆ£ºhttps://gitee.com/
+ç äº‘ï¼šhttps://gitee.com/
 
-Ô´ÂëÖ®¼Ò£ºhttps://www.mycodes.net/
+æºç ä¹‹å®¶ï¼šhttps://www.mycodes.net/
 
-JSON to Dart£º
+JSON to Dartï¼š
 
 https://javiercbk.github.io/json_to_dart/
 
-JsonÔÚÏß½âÎöÑéÖ¤£º
+Jsonåœ¨çº¿è§£æéªŒè¯ï¼š
 
 https://www.json.cn/
 
-ÔÚÏß½Ó¿Ú²âÊÔ£¨Getman£©£º
+åœ¨çº¿æ¥å£æµ‹è¯•ï¼ˆGetmanï¼‰ï¼š
 
 https://getman.cn/
 
@@ -154,171 +154,171 @@ https://getman.cn/
 
 
 
-×ÊÔ´ËÑË÷
+èµ„æºæœç´¢
 
 
 
-DogeDogeËÑË÷ÒıÇæ£ºwww.dogedoge.com
+DogeDogeæœç´¢å¼•æ“ï¼šwww.dogedoge.com
 
-ÃØ¼£ËÑË÷£ºhttps://mijisou.com/
+ç§˜è¿¹æœç´¢ï¼šhttps://mijisou.com/
 
-Ğ¡°×ÅÌ£ºhttps://www.xiaobaipan.com/
+å°ç™½ç›˜ï¼šhttps://www.xiaobaipan.com/
 
-ÔÆÅÌ¾«Áé£¨×ÊÔ´ËÑË÷£©£º
+äº‘ç›˜ç²¾çµï¼ˆèµ„æºæœç´¢ï¼‰ï¼š
 
 www.yunpanjingling.com
 
-³æ²¿Âä£¨×ÊÔ´ËÑË÷£©£º
+è™«éƒ¨è½ï¼ˆèµ„æºæœç´¢ï¼‰ï¼š
 
 www.chongbuluo.com
 
-Èç·çËÑ£¨×ÊÔ´ËÑË÷£©£º
+å¦‚é£æœï¼ˆèµ„æºæœç´¢ï¼‰ï¼š
 
 http://www.rufengso.net/
 
-°®°Ç£ºhttps://www.zyboe.com/
+çˆ±æ‰’ï¼šhttps://www.zyboe.com/
 
 
 
- 
-
-Ğ¡¹¤¾ß
 
 
+å°å·¥å…·
 
-ÄÌÅ£¿ì´«£¨ÔÚÏß´«ÊäÎÄ¼şÀûÆ÷£©£ºcowtransfer.com
 
-ÎÄÊåÊå£¨´óÎÄ¼ş´«Êä£¬²»ÏŞËÙ£©£º
+
+å¥¶ç‰›å¿«ä¼ ï¼ˆåœ¨çº¿ä¼ è¾“æ–‡ä»¶åˆ©å™¨ï¼‰ï¼šcowtransfer.com
+
+æ–‡å”å”ï¼ˆå¤§æ–‡ä»¶ä¼ è¾“ï¼Œä¸é™é€Ÿï¼‰ï¼š
 
 https://www.wenshushu.cn/
 
-ÔÆ¶Ë³¬¼¶Ó¦ÓÃ¿Õ¼ä£¨PS£¬PPT£¬Excel£¬Ai£©£ºhttps://uzer.me/
+äº‘ç«¯è¶…çº§åº”ç”¨ç©ºé—´ï¼ˆPSï¼ŒPPTï¼ŒExcelï¼ŒAiï¼‰ï¼šhttps://uzer.me/
 
-Ïãµ±Íø£¨ÄêÖÕ×Ü½á£¬¸öÈË¼òÀú£¬ÊÂ¼£²ÄÁÏ£¬×âÁŞºÏÍ¬£¬Ñİ½²¸å£©£º
+é¦™å½“ç½‘ï¼ˆå¹´ç»ˆæ€»ç»“ï¼Œä¸ªäººç®€å†ï¼Œäº‹è¿¹ææ–™ï¼Œç§ŸèµåˆåŒï¼Œæ¼”è®²ç¨¿ï¼‰ï¼š
 
 https://www.xiangdang.net/
 
-¶şÎ¬ÂëÉú³É£ºhttps://cli.im/
+äºŒç»´ç ç”Ÿæˆï¼šhttps://cli.im/
 
-ËÑ¹··­Òë£ºfanyi.sogou.com
+æœç‹—ç¿»è¯‘ï¼šfanyi.sogou.com
 
-ìØÊı£¨Í¼±íÖÆ×÷£¬Êı¾İ¿ÉÊÓ»¯£©£º
+ç†µæ•°ï¼ˆå›¾è¡¨åˆ¶ä½œï¼Œæ•°æ®å¯è§†åŒ–ï¼‰ï¼š
 
 https://dydata.io/appv2/#/pages/index/home
 
-¿½±´ÍÃ£ºhttps://cp.anyknew.com/
+æ‹·è´å…”ï¼šhttps://cp.anyknew.com/
 
-Í¼Æ¬ÎŞÏŞ±ä·Å´ó£ºhttp://bigjpg.com/zh
+å›¾ç‰‡æ— é™å˜æ”¾å¤§ï¼šhttp://bigjpg.com/zh
 
-Ä»²¼£¨ÔÚÏß´ó¸Ù±Ê¼Ç¹¤¾ß£©£ºmubu.com
+å¹•å¸ƒï¼ˆåœ¨çº¿å¤§çº²ç¬”è®°å·¥å…·ï¼‰ï¼šmubu.com
 
-ÔÚÏß×ª»»Æ÷£¨ÔÚÏß×ª»»Æ÷×ª»»ÈÎºÎ²âÁ¿µ¥Î»£©£ºhttps://zh.justcnw.com/
+åœ¨çº¿è½¬æ¢å™¨ï¼ˆåœ¨çº¿è½¬æ¢å™¨è½¬æ¢ä»»ä½•æµ‹é‡å•ä½ï¼‰ï¼šhttps://zh.justcnw.com/
 
-µ÷²éÎÊ¾íÖÆ×÷£º
+è°ƒæŸ¥é—®å·åˆ¶ä½œï¼š
 
 https://www.wenjuan.com/
 
-¹ûºË°ş¿Ç£¨Èí¼şÏÂÔØ£©£º
+æœæ ¸å‰¥å£³ï¼ˆè½¯ä»¶ä¸‹è½½ï¼‰ï¼š
 
 https://www.ghpym.com/
 
-Èí¼şÏÂÔØ£ºhttps://www.unyoo.com/
+è½¯ä»¶ä¸‹è½½ï¼šhttps://www.unyoo.com/
 
-MSDNÎÒ¸æËßÄã£¨windows10ÏµÍ³¾µÏñÏÂÔØ£©£ºhttps://msdn.itellyou.cn/
-
-
+MSDNæˆ‘å‘Šè¯‰ä½ ï¼ˆwindows10ç³»ç»Ÿé•œåƒä¸‹è½½ï¼‰ï¼šhttps://msdn.itellyou.cn/
 
 
 
-µ¼º½Ò³£¨¹¤¾ß¼¯£© 
+
+
+å¯¼èˆªé¡µï¼ˆå·¥å…·é›†ï¼‰
 
 
 
-ÊÀ½ç¸÷¹úÍøÖ·´óÈ«£º
+ä¸–ç•Œå„å›½ç½‘å€å¤§å…¨ï¼š
 
 http://www.world68.com/
 
-Ğ¡É­ÁÖµ¼º½£ºhttp://www.xsldh6.com/
+å°æ£®æ—å¯¼èˆªï¼šhttp://www.xsldh6.com/
 
-¼ò½İ¹¤¾ß£ºhttp://www.shulijp.com/
+ç®€æ·å·¥å…·ï¼šhttp://www.shulijp.com/
 
-NiceTool.net ºÃ¹¤¾ßÍø£º
+NiceTool.net å¥½å·¥å…·ç½‘ï¼š
 
 http://www.nicetool.net/
 
-ÏÖÊµ¾ı¹¤¾ßÏä£¨×ÛºÏĞÍÔÚÏß¹¤¾ß¼¯³ÉÍøÕ¾£©£ºhttp://tool.uixsj.cn/
+ç°å®å›å·¥å…·ç®±ï¼ˆç»¼åˆå‹åœ¨çº¿å·¥å…·é›†æˆç½‘ç«™ï¼‰ï¼šhttp://tool.uixsj.cn/
 
-À¶µ÷ÍøÕ¾£ºhttp://lcoc.top/
+è“è°ƒç½‘ç«™ï¼šhttp://lcoc.top/
 
-Íµ¶ÉÓã£ºhttps://touduyu.com/
+å·æ¸¡é±¼ï¼šhttps://touduyu.com/
 
-Å£µ¼º½£ºhttp://www.ziliao6.com/
+ç‰›å¯¼èˆªï¼šhttp://www.ziliao6.com/
 
-Ğ¡´ôµ¼º½£º
+å°å‘†å¯¼èˆªï¼š
 
 https://www.webjike.com/index.html
 
-¼ò·¨Ö÷Ò³£ºhttp://www.jianfast.com/
+ç®€æ³•ä¸»é¡µï¼šhttp://www.jianfast.com/
 
-KIMÖ÷Ò³£ºhttps://kim.plopco.com/
+KIMä¸»é¡µï¼šhttps://kim.plopco.com/
 
-¾ÛBT£ºhttps://jubt.net/cn/index.html
+èšBTï¼šhttps://jubt.net/cn/index.html
 
-¾«×¼ÔÆ¹¤¾ßºÏ¼¯£º
+ç²¾å‡†äº‘å·¥å…·åˆé›†ï¼š
 
 https://jingzhunyun.com/
 
-ÍÃ2¹¤¾ßºÏ¼¯£ºhttps://www.tool2.cn/
+å…”2å·¥å…·åˆé›†ï¼šhttps://www.tool2.cn/
 
-°®×ÊÁÏ¹¤¾ß£¨ÔÚÏßÊµÓÃ¹¤¾ß¼¯ºÏ£©£º
+çˆ±èµ„æ–™å·¥å…·ï¼ˆåœ¨çº¿å®ç”¨å·¥å…·é›†åˆï¼‰ï¼š
 
 www.toolnb.com
 
-¹¤¾ßµ¼º½£ºhttps://hao.logosc.cn/
+å·¥å…·å¯¼èˆªï¼šhttps://hao.logosc.cn/
 
 
 
 
 
-¿´ÊÓÆµ
+çœ‹è§†é¢‘
 
 
 
-°¢Ä¾Ó°ÊÓ£ºhttps://www.aosk.online/
+é˜¿æœ¨å½±è§†ï¼šhttps://www.aosk.online/
 
-µçÓ°ÍÆ¼ö£¨·ÖÀà±ğÖÂ£©£º
+ç”µå½±æ¨èï¼ˆåˆ†ç±»åˆ«è‡´ï¼‰ï¼š
 
 http://www.mvcat.com
 
-APPÓ°Ôº£ºhttps://app.movie
+APPå½±é™¢ï¼šhttps://app.movie
 
-È¥¿´TV£ºhttps://www.qukantv.net/
+å»çœ‹TVï¼šhttps://www.qukantv.net/
 
-¶¯ÂşÊÓÆµÍø£ºhttp://www.zzzfun.com/
+åŠ¨æ¼«è§†é¢‘ç½‘ï¼šhttp://www.zzzfun.com/
 
-94ÉñÂíµçÓ°Íø£ºhttp://www.9rmb.com/
+94ç¥é©¬ç”µå½±ç½‘ï¼šhttp://www.9rmb.com/
 
-NOÊÓÆµ¹ÙÍø£ºhttp://www.novipnoad.com/
+NOè§†é¢‘å®˜ç½‘ï¼šhttp://www.novipnoad.com/
 
-À¶¹â»­ÖÊµçÓ°£ºhttp://www.languang.co/
+è“å…‰ç”»è´¨ç”µå½±ï¼šhttp://www.languang.co/
 
-ÔÚÏß¿´¾ç£ºhttp://dy.27234.cn/
+åœ¨çº¿çœ‹å‰§ï¼šhttp://dy.27234.cn/
 
-´óÊı¾İµ¼º½£ºhttp://hao.199it.com/
+å¤§æ•°æ®å¯¼èˆªï¼šhttp://hao.199it.com/
 
-¶à¹¦ÄÜÍ¼Æ¬ÍøÕ¾£º
+å¤šåŠŸèƒ½å›¾ç‰‡ç½‘ç«™ï¼š
 
 https://www.logosc.cn/so/
 
-Å£Å£TV£ºhttp://www.ziliao6.com/tv/
+ç‰›ç‰›TVï¼šhttp://www.ziliao6.com/tv/
 
-VideoFk½âÎöÊÓÆµ£º
+VideoFkè§£æè§†é¢‘ï¼š
 
 http://www.videofk.com/
 
-À¶µ÷ÍøÕ¾£ºhttp://lcoc.top/vip2.3/
+è“è°ƒç½‘ç«™ï¼šhttp://lcoc.top/vip2.3/
 
-ÓÀ¾Ã×ÊÔ´²É¼¯Íø£º
+æ°¸ä¹…èµ„æºé‡‡é›†ç½‘ï¼š
 
 http://www.yongjiuzy1.com/
 
@@ -326,49 +326,49 @@ http://www.yongjiuzy1.com/
 
 
 
-Ñ§Éè¼Æ 
+å­¦è®¾è®¡
 
 
 
-ÂëÁ¦È«¿ª£¨²úÆ·/Éè¼ÆÊ¦/¶ÀÁ¢¿ª·¢ÕßµÄ×ÊÔ´¿â£©£ºhttps://www.maliquankai.com/designnav/
+ç åŠ›å…¨å¼€ï¼ˆäº§å“/è®¾è®¡å¸ˆ/ç‹¬ç«‹å¼€å‘è€…çš„èµ„æºåº“ï¼‰ï¼šhttps://www.maliquankai.com/designnav/
 
-Ãâ·ÑÒôÆµËØ²Ä£ºhttps://icons8.cn/music
+å…è´¹éŸ³é¢‘ç´ æï¼šhttps://icons8.cn/music
 
-ĞÂCG¶ù£¨ÊÓÆµËØ²ÄÄ£°å£¬ÎŞË®Ó¡+Ãâ·ÑÏÂÔØ£©£º
+æ–°CGå„¿ï¼ˆè§†é¢‘ç´ ææ¨¡æ¿ï¼Œæ— æ°´å°+å…è´¹ä¸‹è½½ï¼‰ï¼š
 
 https://www.newcger.com/
 
-Iconfont£¨°¢Àï°Í°ÍÊ¸Á¿Í¼±ê¿â£©£º
+Iconfontï¼ˆé˜¿é‡Œå·´å·´çŸ¢é‡å›¾æ ‡åº“ï¼‰ï¼š
 
 https://www.iconfont.cn/
 
-Ğ¡Í¼±êÏÂÔØ£ºhttps://www.easyicon.net/
+å°å›¾æ ‡ä¸‹è½½ï¼šhttps://www.easyicon.net/
 
-Flight Icon£ºhttps://www.flighticon.co/
+Flight Iconï¼šhttps://www.flighticon.co/
 
-µÚÒ»×ÖÌå×ª»»Æ÷£ºhttp://www.diyiziti.com/
+ç¬¬ä¸€å­—ä½“è½¬æ¢å™¨ï¼šhttp://www.diyiziti.com/
 
-doyoudosh£¨Æ½ÃæÉè¼Æ£©£º
+doyoudoshï¼ˆå¹³é¢è®¾è®¡ï¼‰ï¼š
 
 www.doyoudo.com
 
-ÆóÒµĞû´«ÊÓÆµÔÚÏßÖÆ×÷£ºhttps://duomu.tv/
+ä¼ä¸šå®£ä¼ è§†é¢‘åœ¨çº¿åˆ¶ä½œï¼šhttps://duomu.tv/
 
-MAKEº£±¨Éè¼Æ¹ÙÍø£ºhttp://maka.im/
+MAKEæµ·æŠ¥è®¾è®¡å®˜ç½‘ï¼šhttp://maka.im/
 
-Ò»¼üº£±¨ÉñÆ÷£º
+ä¸€é”®æµ·æŠ¥ç¥å™¨ï¼š
 
 https://www.logosc.cn/photo/utm_source=hao.logosc.cn&utm_medium=referral
 
-×ÖÓÉ£¨×ÖÌåÉè¼Æ£©£º
+å­—ç”±ï¼ˆå­—ä½“è®¾è®¡ï¼‰ï¼š
 
 http://www.hellofont.cn/
 
-²é×ÖÌåÍøÕ¾£ºhttps://fonts.safe.360.cn/
+æŸ¥å­—ä½“ç½‘ç«™ï¼šhttps://fonts.safe.360.cn/
 
-°®¸øÍø£¨Ãâ·ÑËØ²ÄÏÂÔØµÄÍøÕ¾£¬°üÀ¨ÒôĞ§¡¢ÅäÀÖ£¬3D¡¢ÊÓÆµ¡¢ÓÎÏ·£¬Æ½Ãæ¡¢½Ì³Ì£©£ºhttp://www.aigei.com/
+çˆ±ç»™ç½‘ï¼ˆå…è´¹ç´ æä¸‹è½½çš„ç½‘ç«™ï¼ŒåŒ…æ‹¬éŸ³æ•ˆã€é…ä¹ï¼Œ3Dã€è§†é¢‘ã€æ¸¸æˆï¼Œå¹³é¢ã€æ•™ç¨‹ï¼‰ï¼šhttp://www.aigei.com/
 
-ÔÚÏßÊÓÆµ¼ô¼­£º
+åœ¨çº¿è§†é¢‘å‰ªè¾‘ï¼š
 
 https://bilibili.clipchamp.com/editor
 
@@ -376,69 +376,69 @@ https://bilibili.clipchamp.com/editor
 
 
 
-¸ãÎÄµµ
+ææ–‡æ¡£
 
 
 
-¼´Êé£¨ÔÚÏßÖÆ×÷PPT£©£º
+å³ä¹¦ï¼ˆåœ¨çº¿åˆ¶ä½œPPTï¼‰ï¼š
 
 https://www.keysuper.com/
 
-PDF´¦Àí£ºhttps://smallpdf.com/cn
+PDFå¤„ç†ï¼šhttps://smallpdf.com/cn
 
-PDF´¦Àí£ºhttps://www.ilovepdf.com/zh-cn
+PDFå¤„ç†ï¼šhttps://www.ilovepdf.com/zh-cn
 
-PDF´¦Àí£ºhttps://www.pdfpai.com/
+PDFå¤„ç†ï¼šhttps://www.pdfpai.com/
 
-PDF´¦Àí£ºhttps://www.hipdf.cn/
+PDFå¤„ç†ï¼šhttps://www.hipdf.cn/
 
-Í¼Æ¬Ñ¹Ëõ£¬PDF´¦Àí£º
+å›¾ç‰‡å‹ç¼©ï¼ŒPDFå¤„ç†ï¼š
 
 https://docsmall.com/
 
-ÌÚÑ¶ÎÄµµ£¨ÔÚÏßĞ­×÷±à¼­ºÍ¹ÜÀíÎÄµµ£©£º
+è…¾è®¯æ–‡æ¡£ï¼ˆåœ¨çº¿åä½œç¼–è¾‘å’Œç®¡ç†æ–‡æ¡£ï¼‰ï¼š
 
 docs.qq.com
 
-ProcessOn£¨ÔÚÏßĞ­×÷ÖÆ×÷½á¹¹Í¼£©£º
+ProcessOnï¼ˆåœ¨çº¿åä½œåˆ¶ä½œç»“æ„å›¾ï¼‰ï¼š
 
 www.processon.com
 
-iLovePDF£¨ÔÚÏß×ª»»PDFÀûÆ÷£©£º
+iLovePDFï¼ˆåœ¨çº¿è½¬æ¢PDFåˆ©å™¨ï¼‰ï¼š
 
 www.ilovepdf.com
 
-PPTÔÚÏßÖÆ×÷£ºhttps://www.woodo.cn/
+PPTåœ¨çº¿åˆ¶ä½œï¼šhttps://www.woodo.cn/
 
-PDF24¹¤¾ß£¨pdf´¦Àí¹¤¾ß£©£º
+PDF24å·¥å…·ï¼ˆpdfå¤„ç†å·¥å…·ï¼‰ï¼š
 
 https://tools.pdf24.org/en
 
-IMGBOT£¨ÔÚÏßÍ¼Æ¬´¦Àí£©£º
+IMGBOTï¼ˆåœ¨çº¿å›¾ç‰‡å¤„ç†ï¼‰ï¼š
 
 www.imgbot.ai
 
-¸£ê¿ÔÆ±à¼­£¨ÔÚÏß±à¼­PDF£©£º
+ç¦æ˜•äº‘ç¼–è¾‘ï¼ˆåœ¨çº¿ç¼–è¾‘PDFï¼‰ï¼š
 
 edit.foxitcloud.cn
 
-TinyPNG£¨ÔÚÏßÑ¹ËõÍ¼Æ¬£©£ºtinypng.com
+TinyPNGï¼ˆåœ¨çº¿å‹ç¼©å›¾ç‰‡ï¼‰ï¼štinypng.com
 
-UZER.ME£¨ÔÚÏßÊ¹ÓÃ¸÷ÖÖ´óÓ¦ÓÃ£¬ÔÚÏßÊ¹ÓÃCAD£¬MATLAB£¬OfficeÈı¼şÌ×
+UZER.MEï¼ˆåœ¨çº¿ä½¿ç”¨å„ç§å¤§åº”ç”¨ï¼Œåœ¨çº¿ä½¿ç”¨CADï¼ŒMATLABï¼ŒOfficeä¸‰ä»¶å¥—
 
-         £©£ºuzer.me
+         ï¼‰ï¼šuzer.me
 
-ÓÅÆ·PPT£¨Ä£°åÏÂÔØ£©£º
+ä¼˜å“PPTï¼ˆæ¨¡æ¿ä¸‹è½½ï¼‰ï¼š
 
 http://www.ypppt.com/
 
-µÚÒ»PPT£¨Ä£°åÏÂÔØ£©£º
+ç¬¬ä¸€PPTï¼ˆæ¨¡æ¿ä¸‹è½½ï¼‰ï¼š
 
 http://www.1ppt.com/xiazai/
 
-Èı¶ÙPPTµ¼º½£ºsandunppt.com
+ä¸‰é¡¿PPTå¯¼èˆªï¼šsandunppt.com
 
-Excelº¯Êı±í£º
+Excelå‡½æ•°è¡¨ï¼š
 
 https://support.office.com/zh-cn/article/excel-%E5%87%BD%E6%95%B0%EF%BC%88%E6%8C%89%E5%AD%97%E6%AF%8D%E9%A1%BA%E5%BA%8F%EF%BC%89-b3944572-255d-4efb-bb96-c6d90033e188
 
@@ -448,11 +448,11 @@ https://support.office.com/zh-cn/article/excel-%E5%87%BD%E6%95%B0%EF%BC%88%E6%8C
 
 
 
-ÕÒÍ¼Æ¬
+æ‰¾å›¾ç‰‡
 
 
 
-µçÄÔ±ÚÖ½£ºhttp://lcoc.top/bizhi/
+ç”µè„‘å£çº¸ï¼šhttp://lcoc.top/bizhi/
 
 https://unsplash.com/
 
@@ -464,15 +464,126 @@ https://visualhunt.com/
 
 https://www.ssyer.com/
 
-±Ë°¶Í¼Íø£ºhttp://pic.netbian.com/
+å½¼å²¸å›¾ç½‘ï¼šhttp://pic.netbian.com/
 
-¼«ÏñËØ£¨³¬¸ßÇå´óÍ¼£©£º
+æåƒç´ ï¼ˆè¶…é«˜æ¸…å¤§å›¾ï¼‰ï¼š
 
 https://www.sigoo.com/
 
-Ãâ·Ñ°æÈ¨Í¼Æ¬ËÑË÷£º
+å…è´¹ç‰ˆæƒå›¾ç‰‡æœç´¢ï¼š
 
 https://www.logosc.cn/so/
 
 
 
+
+
+
+
+ç¨‹åºåª›æ¨±å²›éº»è¡£  è¯¾ä»£è¡¨æ¥å•¦ï¼Œç»™ä¸ªä¸‰è¿å§[ç»™å¿ƒå¿ƒ]
+1.cppreference
+https://en.cppreference.com/w/
+
+2.LearnCpp
+https://www.learncpp.com/
+
+3.Cplusplus
+http://www.cplusplus.com/
+
+4.TutorialsPoint
+https://www.tutorialspoint.com/cplusplus/index.htm
+
+5.Awesome C++
+https://github.com/fffaraz/awesome-cpp
+
+6ã€ä¹¦æ ˆç½‘
+https://www.bookstack.cn/
+
+7.ç‰›å®¢ç½‘
+https://www.nowcoder.com/activity/oj
+
+8.æ¬ä¹¦åŒ 
+http://www.banshujiang.cn/
+
+9.ç¨‹åºå‘˜åˆ·é¢˜ç½‘ç«™ï¼šLintCode é¢†æ‰£
+https://www.lintcode.com/problem/
+
+10ã€LeetCode/LintCode é¢˜è§£ç½‘ç«™
+https://www.jiuzhang.com/solution/?utm_source=sc-zhihu-jw0603
+
+11ã€å‰ç«¯ç•Œçš„Dribbbleâ€”â€”Codepen
+https://codepen.io/
+
+12ã€TheServerSide
+https://www.theserverside.com/
+
+13ã€Hacker News
+http://hackernews.betacat.io/
+
+14ã€karan/Projects
+https://www.gitmemory.com/karan/Projects
+
+15.å­—ä½“åŠ¨æ•ˆç¥å™¨Space Type Generator
+https://spacetypegenerator.com/
+
+16.å¤§å­¦è‡ªå­¦ç½‘
+http://v.dxsbb.com/
+
+17.ç®€å•æ•™ç¨‹
+https://www.twle.cn/
+
+
+ä¼šå’•å’•å’•çš„å’•å’•å’•  å…¶å®æ´›è°·ä¹Ÿè¿˜å¯ä»¥
+ç½‘å€ï¼šhttps://www.luogu.org/
+
+
+
+
+æ¸¸æˆç¼–ç¨‹
+1ã€Coding Games
+ç½‘å€ï¼šwww.codingame.com
+
+2ã€CodeCombatï¼ˆæå®¢æˆ˜è®°ï¼‰
+CodeCombat ç½‘å€ï¼šcn.codecombat.com
+æå®¢æˆ˜è®°ï¼ˆä¸­å›½ç‰ˆ CodeCombatï¼‰ç½‘å€ï¼šcodecombat.163.com
+
+3ã€Screeps
+ç½‘å€ï¼šscreeps.com
+
+4ã€Checkio
+ç½‘å€ï¼šcheckio.org
+
+5ã€Vim Adventures
+ç½‘å€ï¼švim-adventures.com
+
+6ã€Cyber Dojo
+ç½‘å€ï¼šwww.cyber-dojo.org/
+æºä»£ç ï¼šhttps://github.com/JonJagger/cyber-dojo
+
+7ã€Code Monkey
+ç½‘å€ï¼šwww.playcodemonkey.com
+
+8ã€Elevator Saga
+ç½‘å€ï¼šplay.elevatorsaga.com/
+ä»£ç ï¼šhttps://github.com/magwo/elevatorsaga
+
+9ã€Codewars
+ç½‘å€ï¼šwww.codewars.com
+
+10ã€Ruby Quiz
+ç½‘å€ï¼šrubyquiz.com/
+
+11ã€Git-Game
+ç½‘å€ï¼šwww.git-game.com
+
+12ã€Hacker.org
+ç½‘å€ï¼šhttps://www.hacker.org/
+
+13ã€Code Hunt
+ç½‘å€ï¼šwww.codehunt.com
+
+14ã€Fight Code
+ç½‘å€ï¼šhttp://fightcode.io
+
+15ã€Human Resource Machine
+ç½‘å€ï¼štomorrowcorporation.com
