@@ -166,9 +166,35 @@
             text-align: center;
             line-height: 30px;
         }
-
+        .prime-numbers div:nth-child(2)::before,
+        .prime-numbers div:nth-child(3)::before,
+        .prime-numbers div:nth-child(5)::before,
+        .prime-numbers div:nth-child(7)::before,
+        .prime-numbers div:not(:nth-child(1)):not(:nth-child(2n)):not(:nth-child(3n)):not(:nth-child(5n)):not(:nth-child(7n))::before{
+            background-color: orange;
+        }
         /************************/
-
+        .word {
+            display: flex;
+        }
+        .word div{
+            width: 50px;
+            height: 50px;
+            background-color: lightgreen;
+            border-radius: 50%;
+            color: darkgreen;
+            border: 1px dashed;
+            font-size: 35px;
+            font-family: sans-serif;
+            text-align: center;
+            line-height: 50px;
+            transition: 0.5s 0.4s ease-out;
+        }
+        .word div:hover {
+            background-color: gold;
+            transform: scale(1.5);
+            transition: 0.5s ease-out;
+        }
     </style>
 </head>
 <body>
@@ -194,14 +220,7 @@
         </div>
     </figure>
 
-    <!--
-        后代选择器-确定分支同步DOM
-        伪类选择器-选择特殊位置或者状态的元素
-        :nth-child(odd) -奇数元素
-        :nth-child(even) -偶数元素
-        :nth-child(1n+3) -n=0.1.2.3...
-        :not(:first-child) -排除第一个元素
-    -->
+
     <figure class="triangle">
         <div>
             <span></span>
@@ -510,5 +529,18 @@
         <div></div>
         <div></div>
     </figure>
+
+    <!-- demo11 -->
+    <figure class="word">
+        <div>E</div>
+        <div>L</div>
+        <div>E</div>
+        <div>M</div>
+        <div>E</div>
+        <div>N</div>
+        <div>T</div>
+        <div>S</div>
+    </figure>
+
 </body>
 </html>
