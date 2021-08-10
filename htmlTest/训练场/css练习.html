@@ -3,211 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <style>
-        body{
-            display: flex;
-            flex-wrap: wrap;
-        }
-        /************************/
-        .dot{
-            width:50px;
-            height:50px;
-            background-color: orange;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-        .rectangle{
-            width: 50px;
-            height: 100px;
-            background-color: gold;
-            border-radius: 10px;
-        }
-
-        /************************/
-        .traffic-lights{
-            background-color: silver;
-            width: 350px;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-        }
-        .light{
-            width: 100px;
-            height: 100px;
-            border: 1px solid black;
-            border-radius: 50%;
-        }
-        .red{background-color: coral;}
-        .yellow{background-color: gold;}
-        .green{background-color: lightgreen;}
-
-        /************************/
-        .tree{
-            width: 30px;
-            height: 300px;
-            background-color: saddlebrown;
-            border-radius: 5px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-        .tree .branch{
-            width: 160px;
-            height: 20px;
-            background-color: peru;
-            border-radius: 10px;
-            display: flex;
-            justify-content: flex-end;
-            transform: rotate(-30deg);
-        }
-        .tree .branch .leaf{
-            width: 40px;
-            height: 40px;
-            border-radius: 100% 0 100% 0;
-            background-color: green;
-            transform: translateY(-100%);
-        }
-
-        /************************/
-        .triangle{
-            width: 500px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .triangle div{
-            height: 50px;
-            margin: 5px;
-            display: flex;
-            justify-content: space-between;
-        }
-        .triangle div span{
-            width: 50px;
-            height: 50px;
-            margin: 10px;
-            background-color: lightgreen;
-            border-radius: 50%;
-        }
-        .triangle div span:first-child,
-        .triangle div span:last-child{
-            background-color: lightcoral;
-        }
-
-        /************************/
-        .chessboard{
-            width: 400px;
-            background-color: burlywood;
-            border: 10px solid darkgray;
-        }
-        .chessboard div{
-            display: flex;
-        }
-        .chessboard div span{
-            width: 100px;
-            height: 100px;
-        }
-        .chessboard div:nth-child(odd) span:nth-child(even),
-        .chessboard div:nth-child(even) span:nth-child(odd){
-            background-color: rgba(0, 0, 0, 0.3);
-        }
-
-        /************************/
-        .demo109{
-            display: flex;
-            justify-content: space-between;
-        }
-        .demo109 div{
-            width: 30px;
-            height: 30px;
-            background-color: lightgreen;
-            border-radius: 50%;
-            margin: 4px;
-        }
-        .demo109:nth-child(2) div:nth-child(0n+7){
-            background-color: orange;
-        }
-        .demo109:nth-child(3) div:nth-child(1n+3){
-            background-color: orange;
-        }
-        .demo109:nth-child(4) div:nth-child(2n+1){
-            background-color: orange;
-        }
-        .demo109:nth-child(5) div:nth-child(2n+0){
-            background-color: orange;
-        }
-        .demo109:nth-child(6) div:nth-child(5n){
-            background-color: orange;
-        }
-        .demo109:nth-child(7) div:nth-child(6n+3){
-            background-color: orange;
-        }
-
-        /************************/
-        .prime-numbers{
-            width: 400px;
-            height: 400px;
-            display: grid;
-            grid-template-columns: repeat(10, 1fr);
-            counter-reset: n;
-        }
-        .prime-numbers div{
-            counter-increment: n;
-            position: relative;
-            width: 30px;
-            height: 30px;
-        }
-        .prime-numbers div::before{
-            content: counter(n);
-            position: absolute;
-            width: inherit;
-            height: inherit;
-            background-color: lightgreen;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 30px;
-        }
-        .prime-numbers div:nth-child(2)::before,
-        .prime-numbers div:nth-child(3)::before,
-        .prime-numbers div:nth-child(5)::before,
-        .prime-numbers div:nth-child(7)::before,
-        .prime-numbers div:not(:nth-child(1)):not(:nth-child(2n)):not(:nth-child(3n)):not(:nth-child(5n)):not(:nth-child(7n))::before{
-            background-color: orange;
-        }
-        /************************/
-        .word {
-            display: flex;
-        }
-        .word div{
-            width: 50px;
-            height: 50px;
-            background-color: lightgreen;
-            border-radius: 50%;
-            color: darkgreen;
-            border: 1px dashed;
-            font-size: 35px;
-            font-family: sans-serif;
-            text-align: center;
-            line-height: 50px;
-            transition: 0.5s 0.4s ease-out;
-        }
-        .word div:hover {
-            background-color: gold;
-            transform: scale(1.5);
-            transition: 0.5s ease-out;
-        }
-    </style>
+    <link rel="stylesheet" href="css练习.css" />
 </head>
 <body>
+    <!-- demo1 -->
     <figure>
         <div class="dot"></div>
         <div class="rectangle"></div>
     </figure>
+
+    <!-- demo5 -->
     <figure class="traffic-lights">
         <div class="light red"></div>
         <div class="light yellow"></div>
         <div class="light green"></div>
     </figure>
 
+    <!-- demo6 -->
     <figure class="tree">
         <div class="branch">
             <span class="leaf"></span>
@@ -220,7 +32,7 @@
         </div>
     </figure>
 
-
+    <!-- demo7 -->
     <figure class="triangle">
         <div>
             <span></span>
@@ -257,6 +69,7 @@
         </div>
     </figure>
 
+    <!-- demo8 -->
     <figure class="chessboard">
         <div>
             <span></span>
@@ -284,6 +97,7 @@
         </div>
     </figure>
 
+        <!-- demo9 -->
     <figure class="fa-demo109">
         <div class="demo109">
             <div></div>
@@ -427,6 +241,7 @@
         </div>
     </figure>
 
+    <!-- demo10 -->
     <figure class="prime-numbers">
         <div></div>
         <div></div>
