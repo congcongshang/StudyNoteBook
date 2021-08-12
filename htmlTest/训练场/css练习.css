@@ -220,6 +220,28 @@ transform  变形     第8章讲解
     transition: 0.5s ease-out;
 }
 
-
-
-
+/*
+示例12 绘制放大镜 联系长度单位px
+*/
+.magnifier{
+    position: relative;
+    color: dodgerblue;
+}
+.lens {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 10px solid;
+    border-radius: 50%
+}
+.handle {
+    position: absolute;
+    width: 20px;
+    height: 100px;
+    border-radius: 0 0 10px 10px;
+    background-color: currentColor;
+    left: 100px;
+    top: 100px;
+    transform: rotate(-45deg);
+    transform-origin: top;
+}
