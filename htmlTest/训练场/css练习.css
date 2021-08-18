@@ -221,27 +221,96 @@ transform  变形     第8章讲解
 }
 
 /*
-示例12 绘制放大镜 联系长度单位px
+示例12 绘制放大镜 练习长度单位px
+示例12 绘制放大镜 练习长度单位em
 */
 .magnifier{
     position: relative;
     color: dodgerblue;
+    font-size: 5px;
 }
 .lens {
     position: absolute;
-    width: 100px;
-    height: 100px;
-    border: 10px solid;
+    width: 10em;
+    height: 10em;
+    border: 1em solid;
     border-radius: 50%
 }
 .handle {
     position: absolute;
-    width: 20px;
-    height: 100px;
-    border-radius: 0 0 10px 10px;
+    width: 2em;
+    height: 10em;
+    border-radius: 0 0 1em 1em;
     background-color: currentColor;
-    left: 100px;
-    top: 100px;
+    left: 10em;
+    top: 10em;
     transform: rotate(-45deg);
     transform-origin: top;
 }
+
+
+/*
+示例14: 四季显示  练习各种颜色
+*/
+.seasons{
+    width: 20em;
+    height: 20em;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.2em;
+}
+
+.seasons div{
+    border: 0.1em solid gray;
+    text-align: center;
+    line-height: 6em;
+    font-size: 1.5em;
+    color: black;
+}
+
+.seasons div:nth-child(3){
+    order: 4;
+}
+.seasons div:nth-child(1){border-radius: 100% 0 0 0;}
+.seasons div:nth-child(2){border-radius: 0 100% 0 0;}
+.seasons div:nth-child(3){border-radius: 0 0 100% 0;}
+.seasons div:nth-child(4){border-radius: 0 0 0 100%;}
+
+.seasons div:nth-child(1){background-color: springgreen;}
+.seasons div:nth-child(2){background-color: #ff4500;}
+.seasons div:nth-child(3){background-color: rgb(255,215,0);}
+.seasons div:nth-child(4){background-color: hsla(195, 100%, 50%);}
+
+
+/*
+示例15: 相互交叉颜色叠加  透明度alpha
+*/
+
+.hashtag{
+    width: 10em;
+    height: 10em;
+    position: relative;
+}
+.hashtag div{
+    position: absolute;
+    background-color: blue;
+}
+.hashtag div:nth-child(odd){
+    width: 20%;
+    height: 100%;
+}
+.hashtag div:nth-child(even){
+    width: 100%;
+    height: 20%;
+}
+
+.hashtag div:nth-child(1){ left: 10%; }
+.hashtag div:nth-child(2){ top: 10%; }
+.hashtag div:nth-child(3){ right: 10%; }
+.hashtag div:nth-child(4){ bottom: 10%; }
+
+.hashtag div:nth-child(1){ background-color: hsla(197, 71%, 73%, 0.8); }
+.hashtag div:nth-child(2){ background-color: hsla(300, 47%, 75%, 0.8); }
+.hashtag div:nth-child(3){ background-color: hsla(0, 79%, 72%, 0.8); }
+.hashtag div:nth-child(4){ background-color: hsla(28, 100%, 86%, 0.8); }
