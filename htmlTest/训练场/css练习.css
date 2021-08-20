@@ -340,4 +340,27 @@ transform  变形     第8章讲解
 .boxTest .box:nth-child(1){box-sizing: content-box;}
 .boxTest .box:nth-child(2){box-sizing: border-box;}
 
+/*
+示例17: 相对定位 数字8练习
+*/
+.eight {
+    font-size: 6px;
+    margin: 5em;
+    background-color: lightyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.eight div{
+    border-radius: 50%;
+    border: 3em solid lightgreen;
+}
+
+.eight div:nth-child(1){width:18em;height:18em;}
+.eight div:nth-child(2){width:20em;height:20em;}
+
+.eightTrue div:nth-child(1){
+    position: relative;
+    top: 3em;
+}
