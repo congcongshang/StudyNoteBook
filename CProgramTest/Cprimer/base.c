@@ -49,6 +49,16 @@ int Findzero(int * nums, int numsSize){
     return i;
 }
 
+/**
+ * 旋转数组 其实就是数组循环后移k位
+ */
+void rotate(int* nums, int numsSize, int k){
+    for(int i=0; i<numsSize; i++){
+        
+    }
+}
+
+
 int main()
 {   
     // int nums[] = {-4, -1, 0, 3, 10};
