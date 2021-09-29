@@ -79,3 +79,13 @@ print(2,'shang',5.0,"你好",sep='.',end=" ")
 标识符: 非数字开头的字母数字下划线组合
 '''
 # name = input("Please check in your name")
+
+for row in range(1,10):
+    for col in range(1,10):
+        if col > row :
+            break
+        prod = row * col
+        print(str(col) + '*' + str(row) + "=" + str(prod), '  ', end='')
+        if prod < 10:
+            print(' ',end = '')
+    print()
