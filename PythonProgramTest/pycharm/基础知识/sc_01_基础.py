@@ -1,40 +1,4 @@
-"""
-
-linux 设置pycharm
-
-"""
-
-# tar -zxvf  pycharm-professional-2017.tar.gz
-# sudo mv pycharm-2017.1.3/ /opt/
-# cd /opt/pycharm-2017.1.3/bin
-# ./pycharm.sh
-
-# 我是注释,不用理我
-# from typing import List
-# from typing import List
-#
-#
-# def canEat(self, candiesCount: List[int], queries: List[List[int]]) -> List[bool]:
-#     return [0,0]
-#
-#
-# print("heool")
-# -----------------------------------------------------------------------------------------------------
-# n=int(input("请输入一个整数:"))
-# sum = 0
-# for i in range ( n+1 ):
-#     sum += i
-# print("1~%d求和的结果为%d"%(n,sum))
-#
-# --------------------------------------------------------------------------------------------------------
-
-# import math
-# math.sin(3)
-#
-# from math import *
-# sin(3)
-
-
+from sc_function import *
 '''
 加法 +
 减法 -
@@ -75,17 +39,26 @@ name.strip()        name的前后均没有空字符
 与    and
 或    or
 
+name = input("Please check in your name")
 print(2,'shang',5.0,"你好",sep='.',end=" ")
 标识符: 非数字开头的字母数字下划线组合
+全局变量: 函数内部必须加global才能访问到全局变量
 '''
-# name = input("Please check in your name")
 
-for row in range(1,10):
-    for col in range(1,10):
-        if col > row :
-            break
-        prod = row * col
-        print(str(col) + '*' + str(row) + "=" + str(prod), '  ', end='')
-        if prod < 10:
-            print(' ',end = '')
-    print()
+def greet(name, greeting="Hello"):
+    """函数默认值
+    greet('Bob')
+    greet('Lily',"Good Morning")
+    """
+    print(greeting,name+'!')
+
+def main():
+    pass
+
+
+main()
+
+
+
+
+
