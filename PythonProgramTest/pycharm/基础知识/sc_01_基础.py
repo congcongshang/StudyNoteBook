@@ -45,6 +45,7 @@ print(2,'shang',5.0,"你好",sep='.',end=" ")
 全局变量: 函数内部必须加global才能访问到全局变量
 '''
 
+
 def greet(name, greeting="Hello"):
     """函数默认值
     greet('Bob')
@@ -52,7 +53,9 @@ def greet(name, greeting="Hello"):
     """
     print(greeting,name+'!')
 
+
 def main():
+
     print("Hello World!")
     pass
 
