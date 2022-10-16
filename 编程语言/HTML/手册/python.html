@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript速查表</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        a{
+            color: black;
+            text-decoration: none;
+        }
+
+        #head{
+            padding: 5px 10%;
+        }
+        #title{
+            padding-left: 10%;
+            margin-bottom: 20px;
+        }
+        #body{
+            margin-bottom: 200px;
+            padding-left: 10%;
+            width: 70%;
+        }
+
+
+        h3{
+            margin: 9px 0px;
+        }
+        .ctable2{
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            /* grid-template-rows: 50px 50px;  */
+            /* grid-gap: 10px 20px; */
+            border-right: 1px solid #aaa;
+            border-bottom: 1px solid #aaa;
+        }
+        .ctable2 div{
+            border-left:1px solid #aaa;
+            border-top: 1px solid #aaa;
+            padding: 9px;
+        }
+        .ctable2 div.single{
+            background: #F5F5F5;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="head"><h1>JavaScript速查表</h1></div>
+        <hr />
+        <div id="title"><!-- <a href="javascript:void(0)" onclick="Show(1)">home</a>&gt; --></div>
+        <div id="body">
+           <!--  <h3>数组</h3>
+            <div class="ctable2">
+                <div class="single"><a href="#">push()</a></div><div class="single">尾部添加元素</div>
+                <div>pop()</div><div>尾部删除元素</div>
+                <div class="single">unshift()</div><div class="single">头部添加元素</div>
+                <div>shift()</div><div>头部删除元素</div>
+            </div> -->
+        </div>
+    </main>
+    <script>
+        function Show(){
+            var obj = JSON.parse(jsonTable);
+
+            for (var i = 0; i < obj.length; i++) {
+                addList(obj[i]);
+            }
+        }
+        function addList(obj){
+            var body = document.querySelector("#body");
+            var name = document.createElement("h3");
+            name.innerHTML = obj.name;
+            body.appendChild(name);
+
+            var box = document.createElement("div");
+            box.className = "ctable2";
+            for(var i=0;i<obj.function.length;i++){
+                var Fname = document.createElement("a");
+                Fname.innerHTML = obj.function[i].name;
+                Fname.href = obj.function[i].article;
+                var Fname1 = document.createElement("div");
+                Fname1.appendChild(Fname);
+                box.appendChild(Fname1);
+
+                var Ftitle = document.createElement("div");
+                Ftitle.innerHTML = obj.function[i].title;
+                box.appendChild(Ftitle);
+                if(i%2 === 0){
+                    Fname1.className = "single";
+                    Ftitle.className = "single";
+                }
+            }
+            body.appendChild(box);
+        }
+        var jsonTable =`[
+        {
+            "name":"功能",
+            "function":[
+            {"name":"JSON格式化","article":"JavaScript/JSON格式化.html","title":"输入JSON字符串格式化输出"},
+            {"name":"pop()","article":"JavaScript/pop.html","title":"删除并返回数组的最后一个元素。"},
+            {"name":"unshift()","article":"JavaScript/unshift.html","title":"向数组的开头添加一个或更多元素，并返回新的长度。"},
+            {"name":"shift()","article":"JavaScript/shift.html","title":"删除并返回数组的第一个元素。"}
+            ]
+        },{
+            "name":"对象",
+            "function":[
+            {"name":"push()","article":"JavaScript/push.html","title":"JSON转换"},
+            {"name":"pop()","article":"JavaScript/push.html","title":"删除属性"},
+            {"name":"unshift()","article":"JavaScript/push.html","title":"变量访问"},
+            {"name":"shift()","article":"JavaScript/push.html","title":"含空格属性访问"}
+            ]
+        },{
+            "name":"Canvas",
+            "function":[
+            {"name":"moveTo()","article":"JavaScript/push.html","title":"把路径移动到画布中的指定点，不创建线条"},
+            {"name":"lineTo()","article":"JavaScript/push.html","title":"添加一个新点，然后在画布中创建从该点到最后指定点的线条"},
+            {"name":"strokeStyle","article":"JavaScript/push.html","title":"设置或返回用于笔触的颜色、渐变或模式"},
+            {"name":"strokeRect()","article":"JavaScript/push.html","title":"绘制矩形（无填充）"}
+            ]
+        }
+        ]`;
+        Show();
+    </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var escape1 = encodeURI("我的名字是：mosquito~");//编码
+        console.log(escape1);
+        var unescape1 = decodeURI(escape1); //解码
+        console.log(unescape1);
+    </script>
+</body>
+</html> -->
+<template>
+  <div style="width: 600px; margin: 0 auto">
+    <el-row>
+      <el-col :span="10">
+        <el-row>
+          <el-col :span="24">明文内容</el-col>
+        </el-row>
+        <el-row>
+          <el-col :span="24">
+            <el-input v-model="content" type="textarea" :rows="8"></el-input>
+            </el-col>
+        </el-row>
+      </el-col>
+      <el-col :span="4">
+        <div style="margin-top: 60px;">
+          <el-row style="margin-bottom: 10px;">
+            <el-col :span="24">
+              <el-button type="primary" @click="encryptFunction">加密</el-button>
+            </el-col>
+          </el-row>
+          <el-row>
+            <el-col :span="24">
+              <el-button type="primary" @click="unEncryptFunction">解密</el-button>
+            </el-col>
+          </el-row>
+        </div>
+      </el-col>
+      <el-col :span="10">
+        <el-row>
+          <el-col :span="24">密文内容</el-col>
+        </el-row>
+        <el-row>
+          <el-col :span="24">
+            <el-input v-model="encryptContent" type="textarea" :rows="8"></el-input>
+          </el-col>
+        </el-row>
+      </el-col>
+    </el-row>
+  </div>
+</template>
+<script>
+  import  CryptoJS from 'crypto-js'
+  export default {
+    data() {
+      return {
+        content: null,
+        encryptContent: null,
+        encryptSecretKey: null
+      }
+    },
+    methods: {
+      /**
+       * 加密方法
+       **/
+      encryptFunction: function () {
+        this.$data.encryptSecretKey=null;
+        let objEncrypt = null;
+        objEncrypt = this.encryptByAES(this.$data.content);
+        if (objEncrypt) {
+          this.$data.encryptContent = objEncrypt.encryptContent;
+          this.$data.encryptSecretKey = objEncrypt.encryptSecretKey;
+        }
+      },
+      /**
+       * aes加密
+       * @param strEncrypt:需要加密的内容
+       * @return 返回加密后的内容与加密密钥
+       **/
+      encryptByAES: function (strEncrypt) {
+        let aesSecretKey = '';//16长度随机字符串
+        do {
+          aesSecretKey = Math.random().toString(36).substr(2) + Math.random().toString(36).substr(Math.floor(Math.random() * (12 - 5 + 1) + 5))
+        } while (aesSecretKey.length != 16);
+        let aesSecretUtf8 = CryptoJS.enc.Utf8.parse(aesSecretKey);
+        const iv = CryptoJS.enc.Base64.parse('******KKKKKKKKKKKKKKKKK******');
+        let aesEncrypt = CryptoJS.AES.encrypt(strEncrypt, aesSecretUtf8, {
+          iv: iv,
+          mode: CryptoJS.mode.CBC,
+          padding: CryptoJS.pad.Pkcs7
+        });
+        let objReturn = {
+          encryptContent: aesEncrypt.toString(),
+          encryptSecretKey: aesSecretKey
+        };
+        return objReturn;
+      },
+      /**
+       * 解密方法
+       **/
+      unEncryptFunction: function () {
+        this.$data.content=this.unEncryptByAES( this.$data.encryptContent,this.$data.encryptSecretKey)
+      },
+      /**
+       * aes加密
+       * @param strEncrypt:需要解密的内容
+       * @param keyEncrypt:加密时用到的密钥
+       * @return 返回解密后的内容
+       **/
+      unEncryptByAES: function (strEncrypt,keyEncrypt) {
+        let aesSecretUtf8 = CryptoJS.enc.Utf8.parse(keyEncrypt);
+        const iv = CryptoJS.enc.Base64.parse('******KKKKKKKKKKKKKKKKK******');
+        let aesUnEncrypt =CryptoJS.AES.decrypt(strEncrypt,aesSecretUtf8,
+          {
+            iv: iv,
+            mode: CryptoJS.mode.CBC,
+            padding: CryptoJS.pad.Pkcs7
+          });
+        return aesUnEncrypt.toString(CryptoJS.enc.Utf8);
+      },
+    }
+  }
+</script>

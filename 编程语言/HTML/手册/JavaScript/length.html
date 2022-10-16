@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript速查表</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <div id="head"><h1>JavaScript速查表</h1></div>
+        <hr />
+        <div id="title"><a href="../JavaScript.html">home</a>&gt;length</div>
+        <div id="body">
+
+        </div>
+    </main>
+    <script>
+
+
+
+        function Show(){
+            var obj = JSON.parse(jsonTable);
+
+            for (var i = 0; i < obj.length; i++) {
+                addList(obj[i]);
+            }
+        }
+        function addList(obj){
+            var body = document.querySelector("#body");
+            var name = document.createElement("h3");
+            name.innerHTML = obj.name;
+            body.appendChild(name);
+            if(obj.key === 1){
+                var Vstr = document.createElement("div");
+                Vstr.innerHTML = obj.value;
+                body.appendChild(Vstr);
+            }
+            if(obj.key === 2){
+                var box = document.createElement("div");
+                box.className = "ctable2";
+                for(var i=0;i<obj.value.length;i++){
+                    var Fname = document.createElement("div");
+                    Fname.innerHTML = obj.value[i].name;
+                    box.appendChild(Fname);
+
+                    var Ftitle = document.createElement("div");
+                    Ftitle.innerHTML = obj.value[i].Description;
+                    box.appendChild(Ftitle);
+                    if(i%2 === 0){
+                        Fname.className = "single";
+                        Ftitle.className = "single";
+                    }
+                }
+                body.appendChild(box);
+            }
+            if(obj.key === 3){
+                var Vstr = document.createElement("div");
+                Vstr.innerHTML = obj.value;
+                Vstr.className = "code";
+                body.appendChild(Vstr);
+            }
+        }
+        var jsonTable =`[
+        {
+            "name":"定义",
+            "key":1,
+            "value":"length 属性可设置或返回数组中元素的数目。"
+        },{
+            "name":"语法",
+            "key":1,
+            "value":"arrayObject.length"
+        },{
+            "name":"参数",
+            "key":0,
+            "value":[
+            {"name":"newelement1","Description":"必需。要添加到数组的第一个元素。"},
+            {"name":"newelement2","Description":"可选。要添加到数组的第二个元素。"},
+            {"name":"newelementX","Description":"可选。可添加多个元素。"}
+            ]
+        },{
+            "name":"返回值",
+            "key":0,
+            "value":"把指定的值添加到数组后的新长度。"
+        },{
+            "name":"说明",
+            "key":1,
+            "value":"数组的&nbsp;length&nbsp;属性总是比数组中定义的最后一个元素的下标大&nbsp;1。对于那些具有连续元素，而且以元素&nbsp;0&nbsp;开始的常规数组而言，属性&nbsp;length&nbsp;声明了数组中的元素的个数。<br/><br/>数组的&nbsp;length&nbsp;属性在用构造函数&nbsp;Array()&nbsp;创建数组时被初始化。给数组添加新元素时，如果必要，将更新&nbsp;length&nbsp;的值。<br/><br/>设置&nbsp;length&nbsp;属性可改变数组的大小。如果设置的值比其当前值小，数组将被截断，其尾部的元素将丢失。如果设置的值比它的当前值大，数组将增大，新的元素被添加到数组的尾部，它们的值为&nbsp;undefined。"
+        },{
+            "name":"实例",
+            "key":3,
+            "value":"&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;arr&nbsp;=&nbsp;new&nbsp;Array(3)<br/>&nbsp;&nbsp;&nbsp;&nbsp;arr[0]&nbsp;=&nbsp;\\"John\\"<br/>&nbsp;&nbsp;&nbsp;&nbsp;arr[1]&nbsp;=&nbsp;\\"Andy\\"<br/>&nbsp;&nbsp;&nbsp;&nbsp;arr[2]&nbsp;=&nbsp;\\"Wendy\\"<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;document.write(\\"Original&nbsp;length:&nbsp;\\"&nbsp;+&nbsp;arr.length)<br/>&nbsp;&nbsp;&nbsp;&nbsp;document.write(\\"&lt;br&nbsp;/&gt;\\")<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;arr.length=5<br/>&nbsp;&nbsp;&nbsp;&nbsp;document.write(\\"New&nbsp;length:&nbsp;\\"&nbsp;+&nbsp;arr.length)"
+        },{
+            "name":"结果",
+            "key":3,
+            "value":"Original&nbsp;length:&nbsp;3<br/>New&nbsp;length:&nbsp;5"
+        }
+        ]`;
+        Show();
+    </script>
+</body>
+</html>

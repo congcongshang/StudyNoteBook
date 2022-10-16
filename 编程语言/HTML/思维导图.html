@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>思维导图</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        #mycv{
+            display: block;
+            margin: 0px auto 0px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="mycv" width="900" height="700"></canvas>
+    <script>
+        function draw(){
+            var c = document.getElementById('mycv');  // 找到canvas元素
+            var ctx=c.getContext("2d");               // 创建contex对象
+
+            var text = "我是测试数据"
+            var fontSize = 60;
+            var familyFont = '宋体';
+            var fontStyle = 'blue';
+
+            ctx.font = `${fontSize}px `+familyFont;
+            ctx.fillStyle = fontStyle;
+            var { width: wText } = ctx.measureText(text);
+            // drawFont(ctx,text,200,200);
+            // drawRoundRect(ctx,200,200,wText,fontSize,10);
+            drawRoundRect(ctx,200,200,wText,fontSize,'green','yellow',20,25);
+            ctx.fillText(text,200,200);
+            ctx.beginPath();
+            ctx.closePath();
+            // ctx.rect(20,20,150,100);
+            ctx.stroke();
+        }
+        draw();
+
+        function drawRoundRect(c,x,y,w,h,color='red',fillcolor='green',width=10,r=15,){
+            x-=h/8.0;
+            y+=h/6.0;
+            w+=h/4.0;
+            h+=h/8.0;
+
+            if(r > h/2 || r > w/2){
+                r = 15;
+            }
+
+            var wh=width/2;
+            var eh = h/5*2;
+
+            // 左下角
+            var x1 = x-wh;
+            var y1 = y+wh;
+            // 左上角
+            var x2 = x-wh;
+            var y2 = y-h-wh;
+            // 右上角
+            var x3 = x+w+wh;
+            var y3 = y-h-wh;
+            // 右下角
+            var x4 = x+w+wh;
+            var y4 = y+wh;
+
+            var x11 = x+r;
+            var y11 = y+wh;
+            var x12 = x+w-r;
+            var y12 = y+wh;
+
+            var x21 = x+r;
+            var y21 = y-h-wh;
+            var x22 = x+w-r;
+            var y22 = y-h-wh;
+
+            var x31 = x+w+wh;
+            var y31 = y-h+r;
+            var x32 = x+w+wh;
+            var y32 = y-r;
+
+            var x41 = x-wh;
+            var y41 = y-h+r;
+            var x42 = x-wh;
+            var y42 = y-r;
+
+
+
+            var fillstyleold = c.fillStyle;
+            c.fillStyle = fillcolor;
+            c.fillRect(x2+wh,y2+wh,w,h);
+            c.fillStyle = fillstyleold;
+
+            c.beginPath();
+
+            // 下边线
+            c.moveTo(x11, y11);
+            c.lineTo(x12, y12);
+            // 上边线
+            c.moveTo(x21, y21);
+            c.lineTo(x22, y22);
+            // 右边线
+            c.moveTo(x31, y31);
+            c.lineTo(x32, y32);
+            // 左边线
+            c.moveTo(x41, y41);
+            c.lineTo(x42, y42);
+            c.closePath();
+
+            c.moveTo(x11,y11);
+            c.quadraticCurveTo(x1,y1,x42,y42);
+            c.moveTo(x41,y41);
+            c.quadraticCurveTo(x2,y2,x21,y21);
+            c.moveTo(x22,y22);
+            c.quadraticCurveTo(x3,y3,x31,y31);
+            c.moveTo(x32,y32);
+            c.quadraticCurveTo(x4,y4,x12,y12);
+
+
+
+            var oldWidth =  c.lineWidth;
+            var oldStyle =  c.strokeStyle;
+
+            c.lineWidth = width;
+            c.strokeStyle = color;
+            c.stroke();
+
+            c.lineWidth = oldWidth;
+            c.strokeStyle = oldStyle;
+
+        }
+        // function drawFont(c,Text,xText,yText,roteSize=0,fontSize=20,fontStyle='#000',familyFont='宋体'){
+        //     c.save();
+        //     c.font = `${fontSize}px `+familyFont;
+        //     c.fillStyle = fontStyle;
+
+        //     var { width: wText } = c.measureText(Text);
+
+        //     c.translate(xText, yText);
+        //     var deg = Math.PI / 180 * roteSize;
+        //     c.rotate(deg);
+        //     c.fillText(Text, -wText / 2, fontSize / 2 - fontSize/7.0);
+        //     c.restore();
+        // }
+
+
+
+/***
+ * 画虚线
+ * 对象,起始点坐标,结束点坐标,颜色,线宽,间隙宽,段长
+ * 核心: 计算起始点角度,判断x和y正负,画短线
+ * */
+ function drawPointLine(c, x1, y1, x2, y2, gapLength=3, pointLength=8,color='#000', width=1 ) {
+    var k = Math.abs(y2 - y1) / Math.abs(x2 - x1);
+    var deg = Math.atan(k);
+    var gapx = gapLength * Math.cos(deg);
+    var gapy = gapLength * Math.sin(deg);
+    var poix = pointLength * Math.cos(deg);
+    var poiy = pointLength * Math.sin(deg);
+    if (x2 - x1 < 0) {
+        if (y2 - y1 < 0) {
+            for (var x = x1, y = y1; x > x2;) {
+                drawLine(c, x, y, x - poix, y - poiy, color, width);
+                x = x - poix - gapx;
+                y = y - poiy - gapy;
+            }
+        } else {
+            for (var x = x1, y = y1; x > x2;) {
+                drawLine(c, x, y, x - poix, y + poiy, color, width);
+                x = x - poix - gapx;
+                y = y + poiy + gapy;
+            }
+        }
+    } else {
+        if (y2 - y1 < 0) {
+            for (var x = x1, y = y1; x < x2;) {
+                drawLine(c, x, y, x + poix, y - poiy, color, width);
+                x = x + poix + gapx;
+                y = y - poiy - gapy;
+            }
+        } else {
+            for (var x = x1, y = y1; x < x2;) {
+                drawLine(c, x, y, x + poix, y + poiy, color, width);
+                x = x + poix + gapx;
+                y = y + poiy + gapy;
+            }
+        }
+    }
+}
+
+/***
+ * 画射线
+ * 对象,起始点坐标,结束点坐标,线长,角度,颜色,线宽
+ * 核心: 计算角度和线长确定结束点坐标
+ * */
+ function drawRayLine(c,x1,y1,length,rote,color='#000',width=1){
+    var deg = Math.PI / 180 * rote;
+    var x2 = length * Math.cos(deg);
+    var y2 = length * Math.sin(deg);
+    drawLine(c, x1, y1, x1 + x2, y1 - y2, color, width);
+}
+
+/**
+ *  画直线
+ *  对象,起始坐标,结束坐标,颜色,线宽
+ * */
+ function drawLine(c, x1, y1, x2, y2, color='#000', width = 1) {
+    c.beginPath();
+    c.moveTo(x1, y1);
+    c.lineTo(x2, y2);
+    c.closePath();
+    c.lineWidth = width;
+    c.strokeStyle = color;
+    c.stroke();
+}
+</script>
+</body>
+</html>
