@@ -1,0 +1,28 @@
+### 复制传入的文本到剪切板
+
+function copy(copyTxt) { // 复制文本到剪切板的函数
+	var createInput = document.getElementById('sec');
+	createInput.value = copyTxt;
+	createInput.select(); // 选择对象
+	document.execCommand("Copy"); // 执行浏览器复制命令
+	// alert(copyTxt);
+}
+
+
+### 给每个元素添加点击事件
+
+function listener() { // 给每一个li添加点击复制的事件
+	document.querySelectorAll('li').forEach(item => {
+		item.addEventListener('click', event => {
+			copy(item.innerText);
+		})
+	})
+}
+
+
+### 创建元素并给元素添加class
+
+var myUl = document.createElement('ul');
+myUl.className = 'Card';
+
+

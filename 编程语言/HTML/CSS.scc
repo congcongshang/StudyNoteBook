@@ -1,0 +1,23 @@
+### 浏览器读取CSS样式的最佳顺序
+
+- 布局定位属性：
+    display / position / float / clear / visibility / overflow
+    （建议 display 第一个写，毕竟关系到模式）
+
+- 自身属性：
+    width / height / margin / padding / border / background
+
+- 文本属性：
+    color / font / text-decoration / text-align 
+    vertical-align / white- space / break-word
+
+- 其他属性（CSS3）：
+    content / cursor / border-radius 
+    / box-shadow / text-shadow / background:linear-gradient
+
+### 文本选中效果
+
+::selection {
+    background: 颜色值;
+    color:颜色值;
+}
